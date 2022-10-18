@@ -3,18 +3,6 @@ import Aos from "aos";
 import { TbArrowsDiagonal } from 'react-icons/tb'
 import Button from '../UI/Button';
 import MainSlider from '../MainSlider';
-// import Image1 from '../images/Photography/1.jpg'
-// import Image2 from '../images/Photography/2.jpg'
-// import Image3 from '../images/Photography/3.jpg'
-// import Image4 from '../images/Photography/4.jpg'
-// import Image5 from '../images/Photography/5.jpg'
-// import Image6 from '../images/Photography/6.jpg'
-// import Image8 from '../images/Photography/8.jpg'
-// import Image9 from '../images/Photography/9.jpg'
-// import Image10 from '../images/Photography/10.jpg'
-// import Image11 from '../images/Photography/11.jpg'
-// import Image12 from '../images/Photography/12.jpg'
-// import Image13 from '../images/Photography/13.jpg'
 
 import "aos/dist/aos.css";
 import './OurPhotographyWorks.css'
@@ -34,7 +22,7 @@ const OurPhotographyWorks = ({ id }) => {
       id: 1,
       title: 'BLACK & WHITE FASHION',
       type: 'Black&White',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2F1.jpg?alt=media&token=1585d4fc-7288-4b84-9cbd-516058fdb6a3',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2Ftest.jpg?alt=media&token=0e427b49-e331-4fd8-b539-83587b4754fd',
       delay: '0'
     },
     {
@@ -42,7 +30,7 @@ const OurPhotographyWorks = ({ id }) => {
       title: 'BLACK & WHITE FASHION',
       type: 'Black&White',
       delay: '200',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2F11.jpg?alt=media&token=dc344efc-8db6-4f22-8505-73abb50563f0',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2Fbenita.jpg?alt=media&token=765bd483-c225-4104-a068-c4a7260445e1',
 
     },
     {
@@ -50,70 +38,71 @@ const OurPhotographyWorks = ({ id }) => {
       title: 'BLACK & WHITE FASHION',
       type: 'Black&White',
       delay: '400',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2F13.jpg?alt=media&token=50e48602-c68c-47ec-ac0b-b4782b6241ed  ',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2FIMG_0899.jpg?alt=media&token=7188447e-243d-424e-89a6-9dfef98b25e0',
     },
     {
       id: 4,
       title: 'BLACK & WHITE FASHION',
       type: 'Black&White',
       delay: '00',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2F17.jpg?alt=media&token=2e241c0d-4221-4204-8b8d-0431f51f05cc',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2FIMG_0467.jpg?alt=media&token=a49f9545-03a5-4e87-850e-3f1a4988dca2',
     },
     {
       id: 5,
       title: 'BLACK & WHITE FASHION',
       type: 'Black&White',
       delay: '200',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2F3.jpg?alt=media&token=04aeaa7b-ad00-4771-8139-ae2822ebf37f',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2FIMG_0850.jpg?alt=media&token=ba0442c6-0e14-42c0-94bb-76a9c9ba1b21',
     },
     {
       id: 6,
       title: 'BLACK & WHITE FASHION',
       type: 'Black&White',
       delay: '400',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2F21.JPG?alt=media&token=012f0c36-2ab9-4ed0-9be2-b40087f542d8',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2FRetouch_.jpg?alt=media&token=821191f4-05a5-4253-bc87-2fb5063b77b0',
     },
     {
       id: 7,
       title: 'BLACK & WHITE FASHION',
       type: 'Black&White',
       delay: '000',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2F24.JPG?alt=media&token=06125269-2e06-483b-8503-8ac15e17eb71',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2FIMG_0473.jpg?alt=media&token=24442f91-b713-49d1-b287-7e08a56c3bd0',
     },
     {
       id: 8,
       title: 'BLACK & WHITE FASHION',
       type: 'Black&White',
       delay: '200',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2F4.jpg?alt=media&token=d0fac438-c8f8-44fc-9208-24c321e33f1d',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2FIMG_0471.jpg?alt=media&token=e94441c8-919b-4188-89a5-7a9276d9f53b',
     },
     {
       id: 9,
       title: 'BLACK & WHITE FASHION',
       type: 'Black&White',
       delay: '400',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2F60.jpg?alt=media&token=1598b31b-1c20-4baf-93da-410886e208d7',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2Fportrait.jpg?alt=media&token=98ff9a65-edac-4bc8-96ff-1a30143b36c1',
     },
     {
       id: 10,
       title: 'BLACK & WHITE FASHION',
       type: 'Black&White',
       delay: '000',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2F8.jpg?alt=media&token=3e272825-3f99-4c76-bf9a-b70f7bfb604a',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2FIMG_0470.jpg?alt=media&token=f85a1639-6054-4ba3-b706-8b58910c5c53',
     },
     {
       id: 11,
       title: 'BLACK & WHITE FASHION',
       type: 'Black&White',
       delay: '200',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2F61.jpg?alt=media&token=8b8a2206-b889-4271-9553-b2975a81e721',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2FIMG_0890.jpg?alt=media&token=010e938e-3aff-458c-889f-3f7efb59cb77',
     },
     {
       id: 12,
       title: 'BLACK & WHITE FASHION',
       type: 'Black&White',
       delay: '400',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2F44.JPG?alt=media&token=ac104153-0b2c-4904-8e66-4bb67f9738c4',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2FSpartan.jpg?alt=media&token=9a4aaa15-6e33-4e1f-9f97-0ca4975dfc7c',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2FIMG_0465.jpg?alt=media&token=9ee83b8e-f9f4-4959-a0a4-b0e9677070bf',
     },
   ];
 
