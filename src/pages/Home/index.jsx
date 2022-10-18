@@ -6,9 +6,10 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Logo from '../../components/images/headerlogowhite.png'
 import MainHero from '../../components/MainHero'
+import OtherServices from '../../components/OtherServices'
 // import OurEngineers from '../../components/OurEngineers'
-// import Team from '../../components/Team'
-import PhotographyTeam from '../../components/PhotographyTeam'
+import Team from '../../components/Team'
+// import PhotographyTeam from '../../components/PhotographyTeam'
 import WhyUs from '../../components/WhyUs'
 
 import './Home.css'
@@ -53,10 +54,11 @@ const Home = () => {
       <MainHero />
       <Categories id='categories-section' />
       <WhyUs id='WhyUs-section' />
-      <Clients id='clients' />
+      <OtherServices />
       <DigitalMedia id='our-categories' />
-      <PhotographyTeam id='our-team' />
-      {/* <Team id='our-team' /> */}
+      <Clients id='clients' />
+      {/* <PhotographyTeam id='our-team' /> */}
+      <Team id='our-team' />
       {/* <OurEngineers id='our-team' /> */}
       <Footer type='home' links={links} />
     </div>

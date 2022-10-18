@@ -1,6 +1,8 @@
 .main__hero {
-  height: calc(100vh - 129px);
+  height: calc(100vh - 130px);
   background-color: #1D2026;
+  padding-top: 130px;
+  margin-bottom: 120px;
 }
 .main__hero .main__hero__content {
   height: calc(100vh - 130px);

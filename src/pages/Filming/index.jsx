@@ -6,19 +6,6 @@ import MovieCard from '../../components/MovieCard'
 import Button from '../../components/UI/Button'
 import WeddingSection from '../../components/WeddingSection'
 import Logo from '../../components/images/tvwhite.png'
-// import MainVideo from '../../components/Videos&audios/THE FISHER MAN MAKING.mp4'
-// import video from '../../components/Videos&audios/peace final mhd.mp4'
-// import Video from '../../components/Video'
-// import video1 from '../../components/Videos&audios/Na So - Wyllz master HD.mp4'
-// import video2 from '../../components/Videos&audios/Utibe Ima - Wyllz master HD.mp4'
-// import Movie1 from '../../components/Videos&audios/main montage new.mp4'
-// import Movie2 from '../../components/Videos&audios/You are watching cor 1.mp4'
-// import Movie3 from '../../components/Videos&audios/basumoh.mp4'
-// import Movie4 from '../../components/Videos&audios/blow pos.mp4'
-// import Movie5 from '../../components/Videos&audios/Ketiano.mp4'
-// import Movie6 from '../../components/Videos&audios/LATONNE SIGNATURES.mp4'
-// import Movie7 from '../../components/Videos&audios/Westgate fhd.mp4'
-// import Movie8 from '../../components/Videos&audios/made in aks.mp4'
 import Aos from "aos";
 
 import "aos/dist/aos.css";
@@ -89,15 +76,6 @@ const Filming = () => {
   ];
 
   const allMovies = [
-    // {
-    //   id: 1,
-    //   src: MainVideo,
-    //   name: 'THE FISHER MAN MAKING',
-    //   rating: 4.8,
-    //   date: 2018,
-    //   duration: '1hr 21min',
-    //   category: 'The FisherMan - BTS',
-    // },
     {
       id: 2,
       src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2Fmain%20montage%20new.mp4?alt=media&token=04b268f9-98dc-4b30-ad3d-e6025b316aa6',
@@ -152,15 +130,15 @@ const Filming = () => {
       duration: '1hr 21min',
       category: 'Video Ads',
     },
-    // {
-    //   id: 8,
-    //   src: Movie7,
-    //   name: 'Westgate fhd',
-    //   rating: 4.8,
-    //   date: 2018,
-    //   duration: '1hr 21min',
-    //   category: 'Video Ads',
-    // },
+    {
+      id: 8,
+      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2FWestgate%20fhd.mp4?alt=media&token=9236340e-72c5-4e6f-8d3e-2d15b89a18b6',
+      name: 'Westgate fhd',
+      rating: 4.8,
+      date: 2018,
+      duration: '1hr 21min',
+      category: 'Video Ads',
+    },
     {
       id: 9,
       src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2Fmade%20in%20aks.mp4?alt=media&token=4cedfc90-aea8-472b-a93b-af5ea0cda2eb',

@@ -119,8 +119,8 @@ const PhotographyTeam = ({ id }) => {
 
   return (
     <section className='photography__team' id={id}>
-      <h2 data-aos="fade-up" className="section__title ph">MEET Team</h2>
-      <p data-aos="fade-up" className='team__ph__subtitle'>WE ARE A TEAM OF SUPER PROFESSIONAL PHOTOGRAPHERS</p>
+      <h2 data-aos="fade-up" className="section__title ph">Meet Our Team</h2>
+      <p data-aos="fade-up" className='team__ph__subtitle'>We are a team of talented, passionate, driven crew to deliver the best work.</p>
       <div className="team__ph__slider">
         <Slider {...settings}>
           {team.map((t, i) => (
@@ -155,4 +155,4 @@ const PhotographyTeam = ({ id }) => {
   )
 }
 
-export default PhotographyTeam
+export default PhotographyTeam;

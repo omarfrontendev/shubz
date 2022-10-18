@@ -64,8 +64,8 @@
 .movie__card .card__details {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 8px;
+  justify-content: center;
+  /* padding-top: 10px; */
 }
 .movie__card .card__details > span {
   font-size: var(--ft__18);

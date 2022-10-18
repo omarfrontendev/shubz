@@ -80,7 +80,7 @@ const OurPhotographyWorks = ({ id }) => {
       title: 'BLACK & WHITE FASHION',
       type: 'Black&White',
       delay: '400',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2Fportrait.jpg?alt=media&token=98ff9a65-edac-4bc8-96ff-1a30143b36c1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2FIMG_0465.jpg?alt=media&token=9ee83b8e-f9f4-4959-a0a4-b0e9677070bf',
     },
     {
       id: 10,
@@ -153,4 +153,4 @@ const OurPhotographyWorks = ({ id }) => {
   )
 }
 
-export default OurPhotographyWorks
+export default OurPhotographyWorks;

@@ -15,31 +15,31 @@ const OurProjects = ({ id }) => {
     {
       id:1,
       name: 'PodCast',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FIMG_9749gjk.jpg?alt=media&token=c1fd28fc-9dc8-413c-9509-5f15eb3ca333',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FIMG_9749gjk.jpg?alt=media&token=9e56d8dd-49e4-4a3d-9842-42370decec69',
       audio: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FAFLEN%202.mpeg?alt=media&token=d0135abc-0a50-47d1-a8b3-e72e07eb1443'
     },
     {
       id:2,
       name: 'Radio Jingles',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FIMG_9868.jpg?alt=media&token=248acaf0-99ee-41ec-9a2c-94474c6d6998',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FIMG_9868.jpg?alt=media&token=8425c0c3-6578-4253-b1cb-6fee228a991a',
       audio: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FAFLEN%201.mpeg?alt=media&token=2faf8eac-66ea-4b81-a59e-ce777f882413'
     },
     {
       id:3,
       name: 'dream on',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FIMG_9889eeeaaaa.jpg?alt=media&token=40a7f71d-cfbc-4b4b-bdde-70e5623dea3c',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FIMG_9889eeeaaaa.jpg?alt=media&token=e6fce5e4-0d48-4f56-9b2b-344b393829b0',
       audio: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2Fdream%20on.mp3?alt=media&token=d410d001-0df9-4451-b35a-a5925c58cb0c'
     },
     {
       id:4,
       name: 'Jubilee syringe ',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FIMG_9983.jpg?alt=media&token=14b30de2-fd14-40aa-88b7-8a6635598dbc',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FIMG_9742.jpg?alt=media&token=6ac5d90f-d5fd-47ad-887a-d957606bbc8b',
       audio: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FJubilee%20syringe%20.mp3?alt=media&token=f9a2f971-a2ff-47de-bb82-d10f39e27266'
     },
     {
       id:5,
       name: 'Say Yes',
-      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FIMG_9868.jpg?alt=media&token=248acaf0-99ee-41ec-9a2c-94474c6d6998',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FIMG_9983.jpg?alt=media&token=58715c38-5e13-4434-aba4-c48270abb863',
       audio: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FsAY%20yES.mp3?alt=media&token=deff65cd-888a-4472-9e34-9df6aa4d66dc'
     },
   ];
