@@ -27,9 +27,9 @@ const Header = ({ page, logo, links }) => {
               <Link to='/shubz'>Home</Link>
             </li>)}
             {links.map(link => (
-            <li className={`link ${page}`} key={link.id}>
-              <a href={`#${link.section}`}>{link.text}</a>
-            </li>))}
+              <li className={`link ${page}`} key={link.id}>
+                <a href={`#${link.section}`}>{link.text}</a>
+              </li>))}
             <li className={`link ${page}`}>
               <Link to='/contact-us' href={`#social`}>Contact Us</Link>
             </li>
@@ -40,12 +40,12 @@ const Header = ({ page, logo, links }) => {
               <a href={`#social`}>Social</a>
             </li>
             <li className={`link car__icon ${page}`}>
-              <a href="#"><CartIcon /></a>
+              <a href="https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/" target='_blank'><CartIcon /></a>
             </li>
           </ul>
-          <button className='open__btn' onClick={() => setOpen(true)}>
+          <a className='open__btn' onClick={() => setOpen(true)}>
             <HiMenu />
-          </button>
+          </a>
         </nav>
       </div>
     </header>
