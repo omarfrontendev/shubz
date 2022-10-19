@@ -42,6 +42,7 @@
   line-height: 1.7;
   font-weight: var(--ft__W__medium);
   font-family: "Poppins",sans-serif;
+  text-transform: capitalize;
 }
 .commercials__content .content a {
   color: var(--color__white);

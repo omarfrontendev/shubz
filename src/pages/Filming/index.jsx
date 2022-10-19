@@ -8,6 +8,7 @@ import WeddingSection from '../../components/WeddingSection'
 import Logo from '../../components/images/tvwhite.png'
 import Video from '../../components/Video'
 import Aos from "aos";
+import Banner2 from '../../components/images/Photography/banner/3.jpg'
 
 import "aos/dist/aos.css";
 import './Filming.css'
@@ -22,33 +23,33 @@ const Filming = () => {
   const movies = [
     {
       id: 1,
-      img: 'https://c4.wallpaperflare.com/wallpaper/502/419/818/the-dark-knight-batman-movies-wallpaper-preview.jpg',
-      name: 'Inside Women',
-      rating: 4.8,
-      date: 2018,
-      duration: '1hr 21min',
-      category: 'Action',
-      desc: 'That is, until she plays her first game of chess. While working as a handyman in an old house, an ex-convict discovers countless horrors revolving around a town’s twisted secrets.'
+      img: 'https://shubz.org/wp-content/themes/shubz-visuals/images/wedding-banner.jpg',
+      name: 'Wedding Filming',
+      // rating: 4.8,
+      // date: 2018,
+      // duration: '1hr 21min',
+      // category: 'Weedings',
+      desc: 'Are You Engaged? Delight Your Weddings With the best photography + cinematography for brides and grooms'
     },
     {
       id: 2,
-      img: 'http://digiflex.themezinho.net/wp-content/uploads/2020/12/slide03.jpg',
-      name: 'Future Hell',
-      rating: 8.6,
-      date: 2020,
-      duration: '1hr 33min',
-      category: 'Action - Adventure - Comedy - Romance',
-      desc: "Based on Edgar Allan Poe's classic bone-chilling tale, this bloody story will have you sleeping with the lights on for years to come. Nine year-old orphan"
+      img: 'https://shubz.org/wp-content/themes/shubz-visuals/images/music-video-banner.png',
+      name: 'Music Video',
+      // rating: 8.6,
+      // date: 2020,
+      // duration: '1hr 33min',
+      // category: 'ADS',
+      desc: "HOW TO GET MORE AMAZING FANS WITH MUSIC VIDEO FOR MUSICIANS"
     },
     {
       id: 3,
-      img: 'http://digiflex.themezinho.net/wp-content/uploads/2020/12/slide02.jpg',
-      name: 'Soviet : The Cold War',
-      rating: 7.3,
-      date: 2019,
-      duration: '1hr 45min',
-      category: 'War',
-      desc: 'Her senses grow sharper, her thinking clearer, and for the first time in her life she feels herself fully in control. By the'
+      img: Banner2,
+      name: 'Film Production',
+      // rating: 7.3,
+      // date: 2019,
+      // duration: '1hr 45min',
+      // category: 'War',
+      desc: 'TOP MOST AFRICAN TALENT FILM PRODUCTION, Watch best of African Art, Films, and TV Shows'
     },
   ];
 

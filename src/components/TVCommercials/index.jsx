@@ -27,13 +27,11 @@ const TVCommercials = ({
     <div className='commercials__content' 
     style={{backgroundImage: `url(${image})`}}
     >
-      {/* <di className='overlay'></di> */}
-      {/* <img className='hero__image' src={image || ''} alt="" /> */}
       <div className="container">
         <div className="content" data-aos="fade-right">
           <span className='commercial__subtitle'>NEW RELEASES</span>
           <h2 className='commercial__name'>{name}</h2>
-          <div className='commercial__data'>
+          {/* <div className='commercial__data'>
             <div className="rating">
               <CircularProgressbar 
               value={rating} 
@@ -66,7 +64,7 @@ const TVCommercials = ({
             <div className="duration">{duration}</div>
             <ImPlay2 className='movie__icon' />
             <div className="movie__category">{category}</div>
-          </div>
+          </div> */}
           <p>{description}</p>
           <a href="#" target='_blank'>Watch Now</a>
         </div>

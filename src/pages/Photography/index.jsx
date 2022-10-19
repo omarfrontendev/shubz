@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import Header from '../../components/Header'
 import HeroSection from '../../components/HeroSection'
-import Image2 from '../../components/images/Photography/banner/video production 2.jpg'
-import Image1 from '../../components/images/Photography/banner/music video.jpg'
+// import Image2 from '../../components/images/Photography/banner/video production 2.jpg'
+// import Image1 from '../../components/images/Photography/banner/music video.jpg'
 import VoicerSection from '../../components/VoicerSection'
 import AboutImage from "../../components/images/shutterstock_204682738.jpg";
 import MainPhotografySection from '../../components/MainPhotografySection'
@@ -17,6 +17,8 @@ import PhotographyTeam from '../../components/PhotographyTeam'
 import PhotographyBlogs from '../../components/PhotographyBlogs'
 import Logo from '../../components/images/photogwhite.png'
 import Footer from '../../components/Footer'
+import Banner1 from '../../components/images/Photography/banner/pexels-zukiman-mohamad-22185.jpg'
+import Banner2 from '../../components/images/Photography/banner/2.jpg'
 
 const Photography = () => {
 
@@ -27,14 +29,14 @@ const Photography = () => {
   const data = [
     {
       id: 1,
-      img: Image1,
+      img: Banner1,
       subtitle: 'Photography',
       title: 'Professional Studio in',
       title2: 'Nigeria'
     },
     {
       id: 2,
-      img: Image2,
+      img: Banner2,
       subtitle: 'Photography',
       title: 'Best Studio WordPRess Theme',
       title2: 'Photography'
