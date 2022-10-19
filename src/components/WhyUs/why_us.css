@@ -60,3 +60,24 @@
 .why__us__content > div:nth-child(2) .why__us__content__text img:hover {
   transform: scale(1.05555555);
 }
+@media(max-width: 991px) {
+  .why__us__content {
+    padding: 40px;
+  }
+  .why__us__content > div {
+    column-gap: 14px;
+    flex-direction: column-reverse;
+    row-gap: 30px;
+  }
+  .why__us__content h2.section__title span {
+    font-size: 50px;
+  }
+  .why__us__content h2.section__title {
+    margin-bottom: 14px;
+  }
+}
+@media(max-width: 575px) {
+  .why__us__content {
+    padding: 20px;
+  }
+}

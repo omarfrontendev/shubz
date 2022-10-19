@@ -10,6 +10,17 @@
   text-align: center;
   margin-bottom: 40px;
 }
+.photography__team.home .section__title {
+  background: linear-gradient(90deg, #743A50 0%, #DEA439 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.photography__team.home .section__title::after {
+  display: none;
+}
+.photography__team.home .team__ph__subtitle {
+  color: #CBC9C9;
+}
 .single__team__ph__box {
   height: 400px;
   overflow: hidden;

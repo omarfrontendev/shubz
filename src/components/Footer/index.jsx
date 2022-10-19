@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from 'react'
-import { FaRegClock, FaLinkedinIn, FaFacebookF } from 'react-icons/fa'
+import { FaRegClock, FaLinkedinIn, FaFacebookF, FaInstagram } from 'react-icons/fa'
 import { BsFillTelephoneFill, BsTwitter } from 'react-icons/bs'
 import { MdLocationOn } from 'react-icons/md'
-import { ImGooglePlus } from 'react-icons/im'
 import FooterLogo from '../images/footerlogowhite.png'
 import Aos from "aos";
 
@@ -43,8 +42,8 @@ const Footer = ({ type, links }) => {
               <BsFillTelephoneFill className='c__icon' /> Contact Phones
             </div>
             <div className="contact">
-              <p>+2349095177470</p>
-              <a href='mailto:  info@shubz.or'>info@shubz.or</a>
+              <a href='tel:+2349095177470'>+2349095177470</a>
+              <a href='mailto:info@shubz.org'>info@shubz.org</a>
             </div>
           </div>
           <div>
@@ -58,10 +57,10 @@ const Footer = ({ type, links }) => {
           </div>
         </div>
         <div className="footer__social">
-          <a className={`${type === 'TV/FILM' ? 'TVFILM' : type }`} href='#' target='_blank'><FaFacebookF /></a>
-          <a className={`${type === 'TV/FILM' ? 'TVFILM' : type }`} href='#' target='_blank'><BsTwitter /></a>
-          <a className={`${type === 'TV/FILM' ? 'TVFILM' : type }`} href='#' target='_blank'><ImGooglePlus /></a>
-          <a className={`${type === 'TV/FILM' ? 'TVFILM' : type }`} href='#' target='_blank'><FaLinkedinIn /></a>
+          <a className={`${type === 'TV/FILM' ? 'TVFILM' : type }`} href='https://web.facebook.com/shubzvisuals?_rdc=1&_rdr' target='_blank' rel="noreferrer"><FaFacebookF /></a>
+          <a className={`${type === 'TV/FILM' ? 'TVFILM' : type }`} href='https://twitter.com/shubzvisuals' target='_blank' rel="noreferrer"><BsTwitter /></a>
+          <a className={`${type === 'TV/FILM' ? 'TVFILM' : type }`} href='https://www.linkedin.com/company/shubz-entertainment/' target='_blank' rel="noreferrer"><FaLinkedinIn /></a>
+          <a className={`${type === 'TV/FILM' ? 'TVFILM' : type }`} href='https://www.instagram.com/shubzvisuals/' target='_blank' rel="noreferrer"><FaInstagram /></a>
         </div>
         <p className='copy__rigth'>© 2022 SHUBZ Entertainment. All Rights Reserved</p>
       </div>

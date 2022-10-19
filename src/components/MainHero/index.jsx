@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../UI/Button'
+
 import './MainHero.css'
 
 const MainHero = () => {

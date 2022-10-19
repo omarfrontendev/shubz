@@ -29,16 +29,16 @@
 }
 .contact__form  textarea:focus, 
 .contact__form  input:focus {
-  border: 1px solid var(--color__yellow);
+  border: 1px solid #000;
 }
-.contact__form.ph  textarea:focus, 
+/* .contact__form.ph  textarea:focus, 
 .contact__form.ph  input:focus {
   border: 1px solid var(--color__purple);
 }
 .contact__form.tv  textarea:focus, 
 .contact__form.tv  input:focus {
   border: 1px solid var(--color__dark__purple);
-}
+} */
 .contact__form .main__button {
   width: fit-content;
   border-radius: 8px;
@@ -46,4 +46,14 @@
   padding: 18px 40px;
   text-transform: uppercase;
   font-weight: 500;
+  background: unset;
+  background-color: #000;
+}
+.contact__us .section__title {
+  color: #000;
+}
+.contact__us .section__title::after {
+  display: none;
+  /* background: unset;
+  background-color: #000; */
 }

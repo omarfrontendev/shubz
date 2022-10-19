@@ -7,35 +7,43 @@ export default function Clients({ id }) {
   const clients = [
     {
       id: 'client1',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9xn_1tK7rDeMC64385uzLdD7oIAD9LdVyA&usqp=CAU'
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/clients%2FBasumoh2.png?alt=media&token=a8cda212-8079-497c-a5ac-ebf88deaa8db'
     },
     {
       id: 'client2',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9xn_1tK7rDeMC64385uzLdD7oIAD9LdVyA&usqp=CAU'
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/clients%2FBlow%20Pos.jpg?alt=media&token=811779de-0d73-47a9-8c00-697df421b7b4'
     },
     {
       id: 'client3',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9xn_1tK7rDeMC64385uzLdD7oIAD9LdVyA&usqp=CAU'
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/clients%2FDryva%20Logo.png?alt=media&token=455a89b5-fbaa-4038-84ef-de6f673538b2'
     },
     {
       id: 'client4',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9xn_1tK7rDeMC64385uzLdD7oIAD9LdVyA&usqp=CAU'
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/clients%2FIMG-20220628-WA0005.jpg?alt=media&token=5fa9a03e-dcdb-4e9c-be41-8480af77d9fb'
     },
     {
       id: 'client5',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9xn_1tK7rDeMC64385uzLdD7oIAD9LdVyA&usqp=CAU'
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/clients%2FNetima.jpg?alt=media&token=61342ce5-e187-498b-b480-248283baf3bb'
     },
     {
       id: 'client6',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9xn_1tK7rDeMC64385uzLdD7oIAD9LdVyA&usqp=CAU'
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/clients%2FSweet%20Bride.jpg?alt=media&token=64b6fd8e-9056-4cd4-87c1-b96d928a83a4'
     },
     {
       id: 'client7',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9xn_1tK7rDeMC64385uzLdD7oIAD9LdVyA&usqp=CAU'
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/clients%2FTinaries.png?alt=media&token=d85df251-6660-4554-85c4-ade2927f35c6'
     },
     {
       id: 'client8',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9xn_1tK7rDeMC64385uzLdD7oIAD9LdVyA&usqp=CAU'
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/clients%2FWest%20Gate2.png?alt=media&token=25bf85d6-e78d-4a47-83d0-ece466dcf5bf'
+    },
+    {
+      id: 'client9',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/clients%2Fchampion%20cover.png?alt=media&token=a6d98469-48a9-44de-b9c7-1de52a2e42d7'
+    },
+    {
+      id: 'client10',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/clients%2Flatoons%20logo.png?alt=media&token=faf6ff05-9573-4946-ae49-74bbedfc9962'
     },
   ]
 

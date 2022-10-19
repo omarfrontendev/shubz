@@ -12,6 +12,7 @@ import Image2 from '../components/images/slide-2.jpg'
 import VoicerImage from "../components/images/img-video.png";
 import Logo from '../components/images/audwhite.png'
 import { useEffect } from 'react'
+import PhotographyTeam from '../components/PhotographyTeam'
 
 const Audio = () => {
 
@@ -77,6 +78,7 @@ const Audio = () => {
       <OurProjects id='our-projects' />
       <OurClients id='our-clients' />
       <OurEngineers id='our-engineers' />
+      {/* <PhotographyTeam /> */}
       <Footer type='Audio' links={headerLinks} />
     </>
   )

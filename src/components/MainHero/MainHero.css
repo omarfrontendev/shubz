@@ -16,6 +16,8 @@
   height: calc(100vh - 129px);
   display: flex;
   align-items: center;
+  flex: 1;
+  overflow: hidden;
 }
 .main__hero__content .hero__image .bg__img {
   position: absolute;
@@ -66,4 +68,39 @@
 }
 .hero__text__content .main__button {
   border-radius: 10px;
+}
+
+@media(max-width: 1199px) {
+  .main__hero__content .hero__image {
+    flex: .8;
+  }
+  .hero__text__content h1 {
+    font-size: 50px;
+  }
+  .hero__text__content p {
+    width: auto;
+  }
+}
+@media(max-width: 991px) {
+  .hero__text__content h1 {
+    font-size: 45px;
+    line-height: 53px;
+  }
+  .hero__text__content p {
+    margin: 20px 0;
+  }
+}
+
+@media(max-width: 767px) {
+  .main__hero .main__hero__content {
+    flex-direction: column-reverse;
+  }
+  .main__hero,
+  .main__hero .main__hero__content {
+    height: auto;
+    row-gap: 30px;
+  }
+  .main__hero {
+    margin-bottom: 0px;
+  }
 }

@@ -39,3 +39,27 @@
 .categories__content img {
   width: 150px;
 }
+@media(max-width: 991px) {
+  .categories__section .categories__parag,
+  .categories__section .categories__subtitle {
+    font-size: 16px;
+  }
+  .categories__section .categories__title {
+    font-size: 24px;
+  }
+  .categories__content img {
+    width: 120px;
+  }
+}
+@media(max-width: 575px) {
+  .categories__section .categories__title {
+    font-size: 20px;
+  }
+  .categories__section .categories__parag, .categories__section .categories__subtitle {
+    font-size: 14px;
+  }
+  .categories__content {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}

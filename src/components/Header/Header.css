@@ -131,11 +131,19 @@ header.home {
   .main__header .linkes {
     column-gap: 20px;
   }
+  .main__header {
+    max-width: calc(100% - 48px);
+    margin: 0 24px;
+  }
 }
 
 @media(max-width: 767px) {
   .main__header {
-    position: relative;
+    max-width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+  .main__header {
+    /* position: relative; */
   }
   .main__header .linkes {
     position: fixed;
@@ -160,11 +168,17 @@ header.home {
   .open__btn,
   .close__btn {
     display: block;
+    font-size: 28px;
   } 
   .close__btn {
     color: #FFF;
     position: absolute;
     top: 20px;
     right: 20px;
+  }
+}
+@media(max-width: 575px) {
+  .main__header.home .logo {
+    width: 60px;
   }
 }

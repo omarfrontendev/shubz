@@ -8,7 +8,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import './PhotographyTeam.css'
 
-const PhotographyTeam = ({ id }) => {
+const PhotographyTeam = ({ id, type }) => {
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
@@ -118,7 +118,7 @@ const PhotographyTeam = ({ id }) => {
   ]
 
   return (
-    <section className='photography__team' id={id}>
+    <section className={`photography__team ${type === 'home' ? 'home' : ''}`} id={id}>
       <h2 data-aos="fade-up" className="section__title ph">Meet Our Team</h2>
       <p data-aos="fade-up" className='team__ph__subtitle'>We are a team of talented, passionate, driven crew to deliver the best work.</p>
       <div className="team__ph__slider">
