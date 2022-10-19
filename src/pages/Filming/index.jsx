@@ -6,6 +6,7 @@ import MovieCard from '../../components/MovieCard'
 import Button from '../../components/UI/Button'
 import WeddingSection from '../../components/WeddingSection'
 import Logo from '../../components/images/tvwhite.png'
+import Video from '../../components/Video'
 import Aos from "aos";
 
 import "aos/dist/aos.css";
@@ -52,27 +53,27 @@ const Filming = () => {
   ];
 
   const music = [
-    // {
-    //   id: 1,
-    //   src: video1,
-    //   name: 'Na So - Wyllz master HD',
-    //   rating: 7.1,
-    //   type: 'Music Videos'
-    // },
-    // {
-    //   id: 2,
-    //   src: video2,
-    //   name: 'Utibe Ima - Wyllz master HD',
-    //   rating: 7.1,
-    //   type: 'Music Videos'
-    // },
-    // {
-    //   id: 3,
-    //   src: video,
-    //   name: 'peace final mhd',
-    //   rating: 7.1,
-    //   type: 'Music Videos'
-    // }
+    {
+      id: 1,
+      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-music%2FTRIAL____________Na%20So%20-%20Wyllz%20master%20HD.m2ts?alt=media&token=23157987-0076-4337-8612-d2c0d3a68cd1',
+      name: 'Na So - Wyllz master HD',
+      rating: 7.1,
+      type: 'Music Videos'
+    },
+    {
+      id: 2,
+      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-music%2FTRIAL____________Utibe%20Ima%20-%20Wyllz%20master%20HD.m2ts?alt=media&token=dc80ac86-44c5-4c6b-ad2a-191e5c32b4dc',
+      name: 'Utibe Ima - Wyllz master HD',
+      rating: 7.1,
+      type: 'Music Videos'
+    },
+    {
+      id: 3,
+      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-music%2FTRIAL____________peace%20final%20mhd.m2ts?alt=media&token=2a8d9bf1-0ad3-4095-b641-fca6093e8ea5',
+      name: 'peace final mhd',
+      rating: 7.1,
+      type: 'Music Videos'
+    }
   ];
 
   const allMovies = [
@@ -191,7 +192,7 @@ const Filming = () => {
           <Button page='tv'>Show All Movies</Button>
         </div>
       </section>  
-      {/* <Video video={MainVideo} /> */}
+      <Video video='https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-music%2FTRIAL____________THE%20FISHER%20MAN%20MAKING.m2ts?alt=media&token=2922413b-6098-441d-b413-fb8f99653c83' />
       <section className='filming__section' id='music'>
         <div className="container">
           <h2 className='section__title tv'>Listen And Watch <span>Music</span></h2>
