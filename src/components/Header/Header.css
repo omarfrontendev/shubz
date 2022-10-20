@@ -125,9 +125,9 @@ header.home {
   display: none;
 }
 @media(max-width: 991px) {
-  .main__header.tv {
+  /* .main__header.tv {
     padding: 10px 24px;
-  }
+  } */
   .main__header .linkes {
     column-gap: 20px;
   }
