@@ -15,6 +15,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.photography__team.auido .section__title::after {
+  background: linear-gradient(90deg, #743A50 0%, #DEA439 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .photography__team.home .section__title::after {
   display: none;
 }

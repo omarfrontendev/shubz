@@ -119,7 +119,7 @@ const PhotographyTeam = ({ id, type }) => {
 
   return (
     <section className={`photography__team ${type === 'home' ? 'home' : ''}`} id={id}>
-      <h2 data-aos="fade-up" className="section__title ph">Meet Our Team</h2>
+      <h2 data-aos="fade-up" className={`section__title ${type === 'audio' ? '' : 'ph'}`}>Meet Our Team</h2>
       <p data-aos="fade-up" className='team__ph__subtitle'>We are a team of talented, passionate, driven crew to deliver the best work.</p>
       <div className="team__ph__slider">
         <Slider {...settings}>
