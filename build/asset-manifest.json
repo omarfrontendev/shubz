@@ -1,10 +1,15 @@
 {
   "files": {
-    "main.css": "/shubz/static/css/main.e8324b60.css",
-    "main.js": "/shubz/static/js/main.cf273df5.js",
+    "main.css": "/shubz/static/css/main.7841a025.css",
+    "main.js": "/shubz/static/js/main.8ece23ef.js",
+    "static/media/NEW.wav": "/shubz/static/media/NEW.fe6d3f101e50d77cdd58.wav",
+    "static/media/sAY yES.mp3": "/shubz/static/media/sAY yES.4851d93377cfa53fcaca.mp3",
+    "static/media/dream on.mp3": "/shubz/static/media/dream on.545961d3c57c518ab0ec.mp3",
+    "static/media/AFLEN 2.mpeg": "/shubz/static/media/AFLEN 2.06107a3a3052e6853526.mpeg",
     "static/media/2.jpg": "/shubz/static/media/2.aed5a6e2d5a12d1d0c1d.jpg",
     "static/media/slide-1.jpg": "/shubz/static/media/slide-1.5f7a026172a968fc7913.jpg",
     "static/media/bg_clients.jpg": "/shubz/static/media/bg_clients.5750a006e8891e182a15.jpg",
+    "static/media/AFLEN 1.mpeg": "/shubz/static/media/AFLEN 1.30b9ac480699c06c2be5.mpeg",
     "static/media/pexels-zukiman-mohamad-22185.jpg": "/shubz/static/media/pexels-zukiman-mohamad-22185.5c06ec3cdc224a941889.jpg",
     "static/media/img-video.png": "/shubz/static/media/img-video.b1555c9f194621bd9a9c.png",
     "static/media/slide-2.jpg": "/shubz/static/media/slide-2.a7acdd70e7b30ffe0d66.jpg",
@@ -29,11 +34,11 @@
     "static/media/slick.ttf": "/shubz/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/shubz/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/shubz/index.html",
-    "main.e8324b60.css.map": "/shubz/static/css/main.e8324b60.css.map",
-    "main.cf273df5.js.map": "/shubz/static/js/main.cf273df5.js.map"
+    "main.7841a025.css.map": "/shubz/static/css/main.7841a025.css.map",
+    "main.8ece23ef.js.map": "/shubz/static/js/main.8ece23ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8324b60.css",
-    "static/js/main.cf273df5.js"
+    "static/css/main.7841a025.css",
+    "static/js/main.8ece23ef.js"
   ]
 }

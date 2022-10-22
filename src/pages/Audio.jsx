@@ -12,7 +12,7 @@ import Image2 from '../components/images/slide-2.jpg'
 import VoicerImage from "../components/images/img-video.png";
 import Logo from '../components/images/audwhite.png'
 import { useEffect } from 'react'
-import PhotographyTeam from '../components/PhotographyTeam'
+// import PhotographyTeam from '../components/PhotographyTeam'
 
 const Audio = () => {
 

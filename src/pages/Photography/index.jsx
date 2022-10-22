@@ -1,17 +1,9 @@
 import React, { useEffect } from 'react'
 import Header from '../../components/Header'
 import HeroSection from '../../components/HeroSection'
-// import Image2 from '../../components/images/Photography/banner/video production 2.jpg'
-// import Image1 from '../../components/images/Photography/banner/music video.jpg'
 import VoicerSection from '../../components/VoicerSection'
 import AboutImage from "../../components/images/shutterstock_204682738.jpg";
 import MainPhotografySection from '../../components/MainPhotografySection'
-import ServiceOverlay1 from '../../components/images/hp-service-title-bg-2.png'
-import ServiceOverlay2 from '../../components/images/hp-service-title-bg-2-2.png'
-import ServiceOverlay3 from '../../components/images/hp-service-title-bg-3-1.png'
-import ServiceIcon1 from '../../components/images/about-icon-1.png'
-import ServiceIcon2 from '../../components/images/hp-service-icon-2.png'
-import ServiceIcon3 from '../../components/images/hp-service-icon-3.png'
 import OurPhotographyWorks from '../../components/OurPhotographyWorks'
 import PhotographyTeam from '../../components/PhotographyTeam'
 import PhotographyBlogs from '../../components/PhotographyBlogs'
@@ -53,27 +45,51 @@ const Photography = () => {
   const section1 = {
     title: 'PHOTOSHOOT SERVICES', 
     subtitle: 'MODELING & PERSONAL SHOOTINGS', 
-    overlayImage: ServiceOverlay1, 
+    // overlayImage: ServiceOverlay1, 
     text: 'FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .', 
-    icon: ServiceIcon1
   };
 
   const section2 = {
     title: 'PRODUCTION SERVICES', 
     subtitle: 'ADVERTISE. FILIMING. YOU NAME IT', 
-    overlayImage: ServiceOverlay2, 
+    // overlayImage: ServiceOverlay2, 
     text: 'FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .', 
-    icon: ServiceIcon2
   };
 
   const section3 = {
     title: 'POST PRODUCTION', 
     subtitle: 'PRODUCTS. WATCHES. BAGS', 
-    overlayImage: ServiceOverlay3, 
+    // overlayImage: ServiceOverlay3, 
     text: 'FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .', 
-    icon: ServiceIcon3
   };
 
+  const productDesign = {
+    title: 'Product Design', 
+    subtitle: 'PRODUCTS. WATCHES. BAGS', 
+    overlayImage: '', 
+    text: 'FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .', 
+  }
+  
+  const weddings = {
+    title: 'Weddings', 
+    subtitle: 'PRODUCTS. WATCHES. BAGS', 
+    overlayImage: '', 
+    text: 'FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .', 
+  }
+  
+  const commercialShoots = {
+    title: 'Commercial shoots', 
+    subtitle: 'PRODUCTS. WATCHES. BAGS', 
+    overlayImage: '', 
+    text: 'FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .', 
+  }
+  
+  const portraits = {
+    title: 'Portraits', 
+    subtitle: 'PRODUCTS. WATCHES. BAGS', 
+    overlayImage: '', 
+    text: 'FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .', 
+  }
   const headerLinks = [
     {
       id: 1,
@@ -113,25 +129,43 @@ const Photography = () => {
         id='services'
         title={section1.title} 
         subtitle={section1.subtitle} 
-        overlayImage={section1.overlayImage} 
         text={section1.text} 
-        icon={section1.icon}
       />
       <MainPhotografySection
         id='pro-services' 
         title={section2.title} 
         subtitle={section2.subtitle} 
-        overlayImage={section2.overlayImage} 
         text={section2.text} 
-        icon={section2.icon}
       />
       <MainPhotografySection 
         id='post-services' 
         title={section3.title} 
         subtitle={section3.subtitle} 
-        overlayImage={section3.overlayImage} 
         text={section3.text} 
-        icon={section3.icon}
+      />
+      <MainPhotografySection 
+        id='post-services' 
+        title={productDesign.title} 
+        subtitle={productDesign.subtitle} 
+        text={productDesign.text} 
+      />
+      <MainPhotografySection 
+        id='post-services' 
+        title={weddings.title} 
+        subtitle={weddings.subtitle} 
+        text={weddings.text} 
+      />
+      <MainPhotografySection 
+        id='post-services' 
+        title={portraits.title} 
+        subtitle={portraits.subtitle} 
+        text={portraits.text} 
+      />
+      <MainPhotografySection 
+        id='post-services' 
+        title={commercialShoots.title} 
+        subtitle={commercialShoots.subtitle} 
+        text={commercialShoots.text} 
       />
       <OurPhotographyWorks id='our-works' />
       <PhotographyTeam id='photographers' />

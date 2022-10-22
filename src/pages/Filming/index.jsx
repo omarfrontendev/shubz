@@ -80,7 +80,7 @@ const Filming = () => {
   const allMovies = [
     {
       id: 2,
-      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2Fmain%20montage%20new.mp4?alt=media&token=04b268f9-98dc-4b30-ad3d-e6025b316aa6',
+      src: 'https://drive.google.com/file/d/1JOV6zERLG5Ls_WjyWz6q10SFyIYWmpDs/view?usp=sharing',
       name: 'Montage',
       rating: 4.8,
       date: 2018,
@@ -89,7 +89,7 @@ const Filming = () => {
     },
     {
       id: 3,
-      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2FYou%20are%20watching%20cor%201.mp4?alt=media&token=7dacf2ef-9ef3-4f3f-956a-14bf69ebdf8b',
+      src: 'https://youtu.be/m5t8uIrRgX8',
       name: 'UMO ENO TV',
       rating: 4.8,
       date: 2018,

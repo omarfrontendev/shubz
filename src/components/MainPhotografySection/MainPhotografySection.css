@@ -1,51 +1,58 @@
 .main__sectoin {
-  padding: 20PX;
+  padding: 20px 0px;
   position: relative;
-  background-image: url('../images/hp-service-bg-1.jpg');
+  background-image: url("../images/hp-service-bg-1.jpg");
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
-.main__sectoin:nth-of-type(3){
-  background-image: url('../images/hp-service-bg-2.jpg');
+.main__sectoin:nth-of-type(3) {
+  background-image: url("../images/hp-service-bg-2.jpg");
 }
-.main__sectoin:nth-of-type(4){
-  background-image: url('../images/hp-service-bg-3.jpg');
+.main__sectoin:nth-of-type(4) {
+  background-image: url("../images/hp-service-bg-3.jpg");
 }
-.main__sectoin .overlay__main__section {
-  position: absolute;
-  top: 0;
-  left: 20px;
-  width: 60%;
-  height: 100%;
-  object-fit: contain;
+.main__sectoin:nth-of-type(5) {
+  background-image: url("../images/pexels-dalila-dalprat-2043569.jpg");
 }
-.main__sectoin:nth-of-type(3) .overlay__main__section {
-  left: 40%;
+.main__sectoin:nth-of-type(6) {
+  background-image: url("../images/weddings.jpg");
 }
-.main__sectoin .left__col__data {
-  position: absolute;
-  top: 37%;
-  left: 40px;
-  z-index: 100;
-  width: 60%;
+.main__sectoin:nth-of-type(7) {
+  background-image: url("../images/portraits.jpg");
 }
+.main__sectoin:nth-of-type(8) {
+  background-image: url("../images/commercialshoots\ .jpg");
+  /* justify-content: center; */
+}
+.main__sectoin:nth-of-type(8) .left__col__data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main__sectoin:nth-of-type(7) .left__col__data,
+.main__sectoin:nth-of-type(5) .left__col__data,
 .main__sectoin:nth-of-type(3) .left__col__data {
-  left: calc(40% + 20px);
-  top: 32%;
+  margin-left: 50%;
 }
 .main__sectoin .photography__title {
   font-size: var(--ft__44);
   font-weight: var(--ft__W__bold);
   letter-spacing: 2px;
   color: #0a0a0a;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+.main__sectoin:nth-of-type(8) .photography__title,
+.main__sectoin:nth-of-type(7) .photography__title,
+.main__sectoin:nth-of-type(5) .photography__title,
 .main__sectoin:nth-of-type(3) .photography__title {
   color: rgb(255, 255, 255);
-  font-weight: 300;
+  font-weight: 600;
 }
 .main__sectoin h4 {
   font-weight: var(--ft__W__medium);
@@ -54,23 +61,26 @@
   text-transform: uppercase;
   color: #191919;
   margin-top: 4px;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+.main__sectoin:nth-of-type(8) h4,
+.main__sectoin:nth-of-type(7) h4,
+.main__sectoin:nth-of-type(5) h4,
 .main__sectoin:nth-of-type(3) h4 {
-  color :#ffffff;
+  color: #ffffff;
 }
 .main__sectoin .pgotography__text {
   display: flex;
   align-items: flex-start;
   column-gap: 30px;
   margin-top: 40px;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .main__sectoin .pgotography__text img {
   /* flex-grow: 1; */
   object-fit: contain;
 }
-.main__sectoin .pgotography__text p { 
+.main__sectoin .pgotography__text p {
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -80,10 +90,15 @@
   width: 600px;
   max-width: 100%;
 }
+.main__sectoin:nth-of-type(8) .pgotography__text p {
+  color: #FFF;
+}
+.main__sectoin:nth-of-type(7) .pgotography__text p,
+.main__sectoin:nth-of-type(5) .pgotography__text p,
 .main__sectoin:nth-of-type(3) .pgotography__text p {
   color: #bababa;
 }
-.main__section__btn { 
+.main__section__btn {
   font-weight: 700;
   font-style: normal;
   margin-top: 10px;
@@ -94,11 +109,14 @@
 }
 .main__section__btn .arrow__icon {
   font-size: 24px;
-} 
-.main__sectoin:nth-of-type(3) .main__section__btn  {
-  color: #FFF;
 }
-@media(max-width: 1220px) {
+.main__sectoin:nth-of-type(8) .main__section__btn,
+.main__sectoin:nth-of-type(7) .main__section__btn,
+.main__sectoin:nth-of-type(5) .main__section__btn,
+.main__sectoin:nth-of-type(3) .main__section__btn {
+  color: #fff;
+}
+/* @media (max-width: 1220px) {
   .main__sectoin:nth-of-type(3) .overlay__main__section {
     width: 50%;
     left: 49%;
@@ -109,7 +127,7 @@
     width: 48%;
   }
 }
-@media(max-width: 1199px) {
+@media (max-width: 1199px) {
   .main__sectoin .left__col__data {
     top: 20% !important;
   }
@@ -121,18 +139,12 @@
     object-position: 0 -70px;
   }
 }
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .main__sectoin {
     background-image: none !important;
     height: auto;
     min-height: auto;
     padding: 80px 20px;
-    background-color: #f1bf00;
-    /* background-color: #ffd43a; */
-  }
-  .main__sectoin:nth-of-type(3){
-    background-color: #111111;
-    
   }
   .main__sectoin .overlay__main__section {
     width: 100% !important;
@@ -151,7 +163,7 @@
     object-position: 0 -100px;
   }
 }
-@media(max-width: 575px) {
+@media (max-width: 575px) {
   .main__sectoin .pgotography__text {
     flex-direction: column;
     align-items: center;
@@ -163,4 +175,4 @@
   .main__sectoin .photography__title {
     font-size: 30px;
   }
-}
+} */
