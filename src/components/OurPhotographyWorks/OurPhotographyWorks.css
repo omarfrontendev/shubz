@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 25% calc(75% - 30px);
   column-gap: 30px;
+  margin-bottom: 100px;
 }
 .photography__works__section .works__imgs__container {
   display: grid;

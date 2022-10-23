@@ -11,6 +11,7 @@ import Logo from '../../components/images/photogwhite.png'
 import Footer from '../../components/Footer'
 import Banner1 from '../../components/images/Photography/banner/pexels-zukiman-mohamad-22185.jpg'
 import Banner2 from '../../components/images/Photography/banner/2.jpg'
+import Pricing from '../../components/Pricing';
 
 const Photography = () => {
 
@@ -98,6 +99,11 @@ const Photography = () => {
       section: 'our-works' 
     },
     {
+      id: 2,
+      text: 'Pricing',
+      section: 'price-section' 
+    },
+    {
       id: 6,
       text: 'Photographers',
       section: 'photographers' 
@@ -108,6 +114,32 @@ const Photography = () => {
       section: 'blogs' 
     },
   ];
+
+  const prices = [
+    {
+      id: 1,
+      title: 'Basic',
+      subtitle: 'Starter',
+      price: 199,
+      benefits: ['50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space']
+    },
+    {
+      id: 2,
+      title: 'Standard',
+      subtitle: 'Better results',
+      price: 199,
+      benefits: ['50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space'],
+      popular: true
+      
+    },
+    {
+      id: 3,
+      title: 'Premium',
+      subtitle: 'Go all in one',
+      price: 199,
+      benefits: ['50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space']
+    },
+  ]
 
   return (
     <>
@@ -159,6 +191,7 @@ const Photography = () => {
         text={commercialShoots.text} 
       />
       <OurPhotographyWorks id='our-works' />
+      <Pricing prices={prices} page='ph' id='price-section' />
       <PhotographyTeam id='photographers' />
       <PhotographyBlogs id='blogs'/>
       <Footer type='Photography' links={headerLinks} />

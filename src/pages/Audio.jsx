@@ -13,6 +13,7 @@ import VoicerImage from "../components/images/img-video.png";
 import Logo from '../components/images/audwhite.png'
 import { useEffect } from 'react'
 import PhotographyTeam from '../components/PhotographyTeam'
+import Pricing from '../components/Pricing'
 
 const Audio = () => {
 
@@ -44,11 +45,42 @@ const Audio = () => {
     img: VoicerImage
   };
 
-  const headerLinks = [
+  const prices = [
+    {
+      id: 1,
+      title: 'Basic',
+      subtitle: 'Starter',
+      price: 199,
+      benefits: ['50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space']
+    },
     {
       id: 2,
+      title: 'Standard',
+      subtitle: 'Better results',
+      price: 199,
+      benefits: ['50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space'],
+      popular: true
+      
+    },
+    {
+      id: 3,
+      title: 'Premium',
+      subtitle: 'Go all in one',
+      price: 199,
+      benefits: ['50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space']
+    },
+  ];
+
+  const headerLinks = [
+    {
+      id: 1,
       text: 'Our Projects',
       section: 'our-projects' 
+    },
+    {
+      id: 2,
+      text: 'pricing',
+      section: 'price-section' 
     },
     {
       id: 3,
@@ -71,6 +103,7 @@ const Audio = () => {
         {/* <QualitySoundSection/> */}
       </div>
       <OurProjects id='our-projects' />
+      <Pricing prices={prices} page='audio' id='price-section' />
       <OurClients id='our-clients' />
       <PhotographyTeam type='audio' id='our-engineers' />
       <Footer type='Audio' links={headerLinks} />

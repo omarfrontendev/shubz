@@ -16,6 +16,7 @@ import MainVideo from '../../components/videos/THE FISHER MAN MAKING_2.mkv'
 
 import "aos/dist/aos.css";
 import './Filming.css'
+import Pricing from '../../components/Pricing'
 
 const Filming = () => {
 
@@ -163,6 +164,11 @@ const Filming = () => {
       section: 'wedding' 
     },
     {
+      id: 4,
+      text: 'Pricing',
+      section: 'price-section' 
+    },
+    {
       id: 2,
       text: 'Music',
       section: 'music' 
@@ -172,6 +178,32 @@ const Filming = () => {
       text: 'Movies',
       section: 'movies' 
     }
+  ];
+
+  const prices = [
+    {
+      id: 1,
+      title: 'Basic',
+      subtitle: 'Starter',
+      price: 199,
+      benefits: ['50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space']
+    },
+    {
+      id: 2,
+      title: 'Standard',
+      subtitle: 'Better results',
+      price: 199,
+      benefits: ['50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space'],
+      popular: true
+      
+    },
+    {
+      id: 3,
+      title: 'Premium',
+      subtitle: 'Go all in one',
+      price: 199,
+      benefits: ['50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space', '50GB Disk Space']
+    },
   ];
 
   return (
@@ -216,6 +248,7 @@ const Filming = () => {
           {/* <Button page='tv'>Show All Music</Button> */}
         </div>
       </section>
+      <Pricing prices={prices} page='tv' id='price-section' />
       <Footer type='TV/FILM' links={headerLinks} />
     </div>
   )
