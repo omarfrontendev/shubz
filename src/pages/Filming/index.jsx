@@ -12,6 +12,7 @@ import Banner2 from '../../components/images/Photography/banner/3.jpg'
 import Music1 from '../../components/videos/Na So - Wyllz master HD.mkv'
 import Music2 from '../../components/videos/Utibe Ima - Wyllz master HD.mkv'
 import Music3 from '../../components/videos/peace final mhd.mkv'
+import MainVideo from '../../components/videos/THE FISHER MAN MAKING_2.mkv'
 
 import "aos/dist/aos.css";
 import './Filming.css'
@@ -196,7 +197,7 @@ const Filming = () => {
           <Button page='tv'>Show All Movies</Button>
         </div>
       </section>  
-      <Video video='https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-music%2FTRIAL____________THE%20FISHER%20MAN%20MAKING.m2ts?alt=media&token=2922413b-6098-441d-b413-fb8f99653c83' />
+      <Video video={MainVideo} />
       <section className='filming__section' id='music'>
         <div className="container">
           <h2 className='section__title tv'>Listen And Watch <span>Music</span></h2>

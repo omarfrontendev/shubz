@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from 'react'
 import Aos from "aos";
+import { Link } from 'react-router-dom';
 
 import "aos/dist/aos.css";
 import 'react-circular-progressbar/dist/styles.css';
 import './TVCommercials.css'
-import { Link } from 'react-router-dom';
 
 const TVCommercials = ({
   page,
@@ -31,7 +31,7 @@ const TVCommercials = ({
           <span className='commercial__subtitle'>NEW RELEASES</span>
           <h2 className='commercial__name'>{name}</h2>
           <p>{description}</p>
-          <Link to="/contact-us">Watch Now</Link>
+          <Link to="/contact-us">book a session</Link>
         </div>
       </div>
     </div>
