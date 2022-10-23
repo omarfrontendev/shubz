@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Logo1 from '../images/audwhite.png'
 import Logo2 from '../images/photogwhite.png'
 import Logo3 from '../images/tvwhite.png'
+import Button from '../UI/Button'
 
 import './Categories.css'
 
@@ -12,18 +13,20 @@ const Categories = ({ id }) => {
       <div className="container">
         <h3 className='categories__subtitle'>HOW TO DO BUSINESS WITH US</h3>
         <h2 className='categories__title'><span>EVERYTHING YOU NEED TO GET CREATIVE DIGITAL MEDIA PROJECTS DONE.</span></h2>
-        <p className='categories__parag'>CLICK ON ANY OF OUR STATE OF THE ART PROFESSIONAL STUDIOS</p>
-      <div className='categories__content'>
-        <Link to='/audio-page'>
-          <img src={Logo1} alt="" />
-        </Link>
-        <Link to='/photography-page'>
-          <img src={Logo2} alt="" />
-        </Link>
-        <Link to='/filming'>
-          <img src={Logo3} alt="" />
-        </Link>
-      </div>
+        <div className='categories__content'>
+          <Link to='/audio-page'>
+            <img src={Logo1} alt="" />
+            <Button to='/audio-page'>Go To Audio Studio</Button>
+          </Link>
+          <Link to='/photography-page'>
+            <img src={Logo2} alt="" />
+            <Button to='/photography-page' page='photography'>Go To Photography Studio</Button>
+          </Link>
+          <Link to='/filming'>
+            <img src={Logo3} alt="" />
+            <Button to='/filming' page='filming'>Go To TV/Film Studio</Button>
+          </Link>
+        </div>
       </div>
     </section>
   )

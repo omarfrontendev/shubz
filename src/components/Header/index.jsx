@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 import './Header.css'
 
-const Header = ({ page, logo, links }) => {
+const Header = ({ page, logo, links, to }) => {
 
   const [open, setOpen] = useState(false);
 
@@ -17,9 +17,9 @@ const Header = ({ page, logo, links }) => {
       <div className="container">
         <nav className={`main__header ${page}`}>
           <div className="logo">
-            <a href="#">
+            <Link to={to || '/shubz'}>
               <img src={logo || ''} alt="LOGO" />
-            </a>
+            </Link>
           </div>
           <ul className={`linkes ${open ? 'opened' : ''}`}>
             <button className='close__btn' onClick={() => setOpen(false)}><AiOutlineClose /></button>
@@ -36,9 +36,9 @@ const Header = ({ page, logo, links }) => {
             {/* <li className={`link ${page}`}>
               <Link to='/distribution' href={`#social`}>distribution</Link>
             </li> */}
-            <li className={`link ${page}`}>
+            {/* <li className={`link ${page}`}>
               <a href={`#social`}>Social</a>
-            </li>
+            </li> */}
             <li className={`link car__icon ${page}`}>
               <a href="https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/" target='_blank'><CartIcon /></a>
             </li>

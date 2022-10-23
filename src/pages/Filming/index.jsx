@@ -172,7 +172,7 @@ const Filming = () => {
 
   return (
     <div className='tv__page'>
-      <Header page='tv' logo={Logo} links={headerLinks} />
+      <Header to='/filming' page='tv' logo={Logo} links={headerLinks} />
       <HeroSection page='tv' data={movies} />
       <WeddingSection id='wedding' />
       <section className='filming__section movies' id='movies'>

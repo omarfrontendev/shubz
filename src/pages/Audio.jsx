@@ -13,7 +13,6 @@ import VoicerImage from "../components/images/img-video.png";
 import Logo from '../components/images/audwhite.png'
 import { useEffect } from 'react'
 import PhotographyTeam from '../components/PhotographyTeam'
-// import PhotographyTeam from '../components/PhotographyTeam'
 
 const Audio = () => {
 
@@ -47,11 +46,6 @@ const Audio = () => {
 
   const headerLinks = [
     {
-      id: 1,
-      text: 'About Us',
-      section: 'about-us' 
-    },
-    {
       id: 2,
       text: 'Our Projects',
       section: 'our-projects' 
@@ -70,7 +64,7 @@ const Audio = () => {
 
   return (
     <>
-      <Header logo={Logo} links={headerLinks} />
+      <Header to='/audio-page' logo={Logo} links={headerLinks} />
       <HeroSection data={data} />
       <div className='container'>
         <VoicerSection id='about-us' data={aboutSection} />
@@ -78,8 +72,7 @@ const Audio = () => {
       </div>
       <OurProjects id='our-projects' />
       <OurClients id='our-clients' />
-      <PhotographyTeam type='audio' />
-      {/* <OurEngineers id='our-engineers' /> */}
+      <PhotographyTeam type='audio' id='our-engineers' />
       <Footer type='Audio' links={headerLinks} />
     </>
   )

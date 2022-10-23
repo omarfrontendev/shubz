@@ -7,6 +7,8 @@
   font-size: var(--ft__18);
   font-weight: var(--ft__W__bold);
   transition: .3s linear;
+  display: block;
+  width: fit-content;
 }
 .main__button.ph {
   background: linear-gradient(270deg, var(--color__dark__gray) 0%, var(--color__purple) 100%);

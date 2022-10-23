@@ -22,7 +22,7 @@ const HeroContent = ({ img, subtitle, title, title2, page }) => {
         <h2 className='hero__content__title2'>{title2}</h2>
       </div>
       <div data-aos="fade-up">
-        <Button page={page}>know more</Button>
+        <Button to='/contact-us' page={page}>book a session</Button>
       </div>
     </div>
   )

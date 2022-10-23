@@ -7,8 +7,6 @@ import Header from '../../components/Header'
 import Logo from '../../components/images/headerlogowhite.png'
 import MainHero from '../../components/MainHero'
 import OtherServices from '../../components/OtherServices'
-// import OurEngineers from '../../components/OurEngineers'
-// import Team from '../../components/Team'
 import PhotographyTeam from '../../components/PhotographyTeam'
 import WhyUs from '../../components/WhyUs'
 
@@ -22,11 +20,6 @@ const Home = () => {
 
   const links =[
     {
-      id: 1,
-      text: 'Link',
-      section: 'categories-section'
-    },
-    {
       id: 2,
       text: 'Why Us',
       section: 'WhyUs-section'
@@ -35,11 +28,6 @@ const Home = () => {
       id: 3,
       text: 'Our Clients',
       section: 'clients'
-    },
-    {
-      id: 4,
-      text: 'Link',
-      section: 'our-categories'
     },
     {
       id: 5,
@@ -58,8 +46,6 @@ const Home = () => {
       <DigitalMedia id='our-categories' />
       <Clients id='clients' />
       <PhotographyTeam type='home' id='our-team' />
-      {/* <Team id='our-team' /> */}
-      {/* <OurEngineers id='our-team' /> */}
       <Footer type='home' links={links} />
     </div>
   )

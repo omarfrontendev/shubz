@@ -89,18 +89,9 @@ const Photography = () => {
     subtitle: 'PRODUCTS. WATCHES. BAGS', 
     overlayImage: '', 
     text: 'FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .', 
-  }
+  };
+
   const headerLinks = [
-    {
-      id: 1,
-      text: 'About Us',
-      section: 'about-us' 
-    },
-    {
-      id: 2,
-      text: 'Photoshoot',
-      section: 'services' 
-    },
     {
       id: 5,
       text: 'Works',
@@ -120,7 +111,7 @@ const Photography = () => {
 
   return (
     <>
-      <Header page='ph' logo={Logo} links={headerLinks} />
+      <Header to='/photography-page' page='ph' logo={Logo} links={headerLinks} />
       <HeroSection data={data} page={'photography'} />
       <div className="container" style={{overflow: 'hidden'}}>
         <VoicerSection data={aboutSection} page='photography' />

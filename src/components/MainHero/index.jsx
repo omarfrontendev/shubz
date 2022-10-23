@@ -12,7 +12,7 @@ const MainHero = () => {
           <div className="hero__text__content">
             <h1><span>AFRICA URBAN CREATIVE DIGITAL MEDIA</span></h1>
             <p>We Produce & Sell Anything Audio, Image and Video used to promote sales, educate and entertain your audience worldwide.</p>
-            <Button page='home'>Let’s Partner</Button>
+            <Button to='/contact-us' page='home'>Let’s Partner</Button>
           </div>
           <div className="hero__image">
             <img src={Image} alt="" />

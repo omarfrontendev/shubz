@@ -16,12 +16,12 @@ const DigitalMedia = ({ id }) => {
             Download <span>Creative</span> Digital Media Assets ?
           </h2>
           <div className="digital__btns">
-            <a href='#'><BsMusicNote className='digital__icon' />royalty-free music</a>
-            <a href='#'><BsStack className='digital__icon' />graphic templates</a>
-            <a href='#'><FaBox />web templates</a>
-            <a href='#'><IoMdPhotos className='digital__icon' />stock photos</a>
-            <a href='#'><HiVideoCamera className='digital__icon' />stock videos</a>
-            <a href='#'><BsThreeDots className='digital__icon' />browse all</a>
+            <a href='https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/' target='_blank'><BsMusicNote className='digital__icon' />royalty-free music</a>
+            <a href='https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/' target='_blank'><BsStack className='digital__icon' />graphic templates</a>
+            <a href='https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/' target='_blank'><FaBox />web templates</a>
+            <a href='https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/' target='_blank'><IoMdPhotos className='digital__icon' />stock photos</a>
+            <a href='https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/' target='_blank'><HiVideoCamera className='digital__icon' />stock videos</a>
+            <a href='https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/' target='_blank'><BsThreeDots className='digital__icon' />browse all</a>
           </div>
         </div>
       </div>
