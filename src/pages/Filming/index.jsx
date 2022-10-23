@@ -9,6 +9,9 @@ import Logo from '../../components/images/tvwhite.png'
 import Video from '../../components/Video'
 import Aos from "aos";
 import Banner2 from '../../components/images/Photography/banner/3.jpg'
+import Music1 from '../../components/videos/Na So - Wyllz master HD.mkv'
+import Music2 from '../../components/videos/Utibe Ima - Wyllz master HD.mkv'
+import Music3 from '../../components/videos/peace final mhd.mkv'
 
 import "aos/dist/aos.css";
 import './Filming.css'
@@ -56,21 +59,21 @@ const Filming = () => {
   const music = [
     {
       id: 1,
-      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-music%2FTRIAL____________Na%20So%20-%20Wyllz%20master%20HD.m2ts?alt=media&token=23157987-0076-4337-8612-d2c0d3a68cd1',
+      src: Music1,
       name: 'Na So - Wyllz master HD',
       rating: 7.1,
       type: 'Music Videos'
     },
     {
       id: 2,
-      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-music%2FTRIAL____________Utibe%20Ima%20-%20Wyllz%20master%20HD.m2ts?alt=media&token=dc80ac86-44c5-4c6b-ad2a-191e5c32b4dc',
+      src: Music2,
       name: 'Utibe Ima - Wyllz master HD',
       rating: 7.1,
       type: 'Music Videos'
     },
     {
       id: 3,
-      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-music%2FTRIAL____________peace%20final%20mhd.m2ts?alt=media&token=2a8d9bf1-0ad3-4095-b641-fca6093e8ea5',
+      src: Music3,
       name: 'peace final mhd',
       rating: 7.1,
       type: 'Music Videos'

@@ -46,6 +46,10 @@
 .categories__content a .main__button {
   transform: scale(.8);
   border-radius: 6px;
+  transition: .3s ease-in-out;
+}
+.categories__content a:hover .main__button {
+  transform: scale(.8555555);
 }
 .categories__content img {
   width: 150px;
