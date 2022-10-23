@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../UI/Button'
+import Image from '../images/hero.jpeg'
 
 import './MainHero.css'
 
@@ -14,9 +15,7 @@ const MainHero = () => {
             <Button page='home'>Let’s Partner</Button>
           </div>
           <div className="hero__image">
-            <img className='bg__img' src="https://shubzstudios.herokuapp.com/static/dist/images/hero-back-illustration.svg" alt="" />
-            <img className='bg__img loading' src="https://shubzstudios.herokuapp.com/static/dist/images/hero-top-illustration.svg" alt="" />
-            <img src="https://shubzstudios.herokuapp.com/static/hero.gif" alt="" />
+            <img src={Image} alt="" />
           </div>
         </div>
       </div>

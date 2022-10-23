@@ -46,7 +46,7 @@ const OurProjects = ({ id }) => {
       id:6,
       name: 'Jubilee Syringe',
       img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FIMG_9868.jpg?alt=media&token=8425c0c3-6578-4253-b1cb-6fee228a991a',
-      audio: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FsAY%20yES.mp3?alt=media&token=deff65cd-888a-4472-9e34-9df6aa4d66dc'
+      audio: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-audios%2FJubilee%20syringe%20.mp3?alt=media&token=f9a2f971-a2ff-47de-bb82-d10f39e27266'
     },
   ];
 

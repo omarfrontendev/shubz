@@ -59,11 +59,11 @@ const MovieCard = ({
           </div>
         )}
       </div>
-      {category && <div className='category'>{category}</div>}
       <div className='card__details'>
         <span>{name}</span>
         {/* <span>{date || 2021}</span> */}
       </div>
+      {category && <div className='category'>{category}</div>}
     </div>
   )
 }
