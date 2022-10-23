@@ -3,7 +3,7 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import HeroSection from '../../components/HeroSection'
 import MovieCard from '../../components/MovieCard'
-import Button from '../../components/UI/Button'
+// import Button from '../../components/UI/Button'
 import WeddingSection from '../../components/WeddingSection'
 import Logo from '../../components/images/tvwhite.png'
 import Video from '../../components/Video'
@@ -194,7 +194,7 @@ const Filming = () => {
               />
             ))}
           </div>
-          <Button page='tv'>Show All Movies</Button>
+          {/* <Button page='tv'>Show All Movies</Button> */}
         </div>
       </section>  
       <Video video={MainVideo} />
@@ -213,7 +213,7 @@ const Filming = () => {
               />
             ))}
           </div>
-          <Button page='tv'>Show All Music</Button>
+          {/* <Button page='tv'>Show All Music</Button> */}
         </div>
       </section>
       <Footer type='TV/FILM' links={headerLinks} />

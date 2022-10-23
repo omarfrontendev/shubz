@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import Slider from "react-slick";
 import SingleProjectBox from '../SingleProjectBox';
 import Image from '../images/bg_projects.jpg';
-import Button from '../UI/Button';
-import { MusicIcon } from '../UI/icons';
+// import Button from '../UI/Button';
+// import { MusicIcon } from '../UI/icons';
 import Aos from "aos";
 
 import "aos/dist/aos.css";
@@ -100,12 +100,12 @@ const OurProjects = ({ id }) => {
                 />
                 ))}
           </Slider>
-          <Button>
+          {/* <Button>
             <div className="ourproject__btn">
               <MusicIcon />
               view all projects
             </div>
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>

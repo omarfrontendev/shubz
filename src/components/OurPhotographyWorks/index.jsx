@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Aos from "aos";
 import { TbArrowsDiagonal } from 'react-icons/tb'
-import Button from '../UI/Button';
+// import Button from '../UI/Button';
 import MainSlider from '../MainSlider';
 
 import "aos/dist/aos.css";
@@ -111,7 +111,7 @@ const OurPhotographyWorks = ({ id }) => {
         <div className="ph__works__title" data-aos="fade-right">
           <h2 className="section__title ph">OUR WORKS</h2>
           <p className='ph__works__subtitle'>FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THEOCEAN.</p>
-          <Button page='photography'>VIEW ALL WORKS</Button>
+          {/* <Button page='photography'>VIEW ALL WORKS</Button> */}
         </div>
         <div style={{overflow: 'hidden'}}>
           <div className="works__imgs__container">
