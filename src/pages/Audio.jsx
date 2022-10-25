@@ -13,6 +13,7 @@ import VoicerImage from "../components/images/img-video.png";
 import Logo from '../components/images/audwhite.png'
 import { useEffect } from 'react'
 import PhotographyTeam from '../components/PhotographyTeam'
+import PricingAudio from '../components/PricingAudio'
 
 const Audio = () => {
 
@@ -107,6 +108,7 @@ const Audio = () => {
         <QualitySoundSection/>
       </div>
       <OurProjects id='our-projects' />
+      <PricingAudio />
       <OurClients id='our-clients' />
       <PhotographyTeam type='audio' id='our-engineers' />
       <Footer type='Audio' links={headerLinks} />
