@@ -7,6 +7,9 @@ import Photography from './pages/Photography'
 import ContactUsPage from './pages/ContactUsPage'
 import ButtonScrollUp from './components/ButtonScrollUp'
 import Distribution from './pages/Distribution'
+import BookingAudio from './pages/BookingAudio'
+import BookingPhotography from './pages/BookingPhotography'
+import BookingFilming from './pages/BookingFilming'
 
 
 const App = () => {
@@ -21,6 +24,9 @@ const App = () => {
         <Route path='/photography-page' element={<Photography />} />
         <Route path='/filming' element={<Filming />} />
         <Route path='/contact-us' element={<ContactUsPage />} />
+        <Route path='/booking-audio' element={<BookingAudio />} />
+        <Route path='/booking-photography' element={<BookingPhotography />} />
+        <Route path='/booking-filming' element={<BookingFilming />} />
         <Route path='/distribution' element={<Distribution />} />
       </Routes>
       <ButtonScrollUp />

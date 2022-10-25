@@ -5,7 +5,7 @@ import HeroSection from '../components/HeroSection'
 import OurClients from '../components/OurClients'
 // import OurEngineers from '../components/OurEngineers'
 import OurProjects from '../components/OurProjects'
-// import QualitySoundSection from '../components/QualitySoundSection'
+import QualitySoundSection from '../components/QualitySoundSection'
 import VoicerSection from '../components/VoicerSection'
 import Image1 from '../components/images/slide-1.jpg'
 import Image2 from '../components/images/slide-2.jpg'
@@ -79,7 +79,7 @@ const Audio = () => {
     },
     {
       id: 2,
-      text: 'pricing',
+      text: 'Pricing',
       section: 'price-section' 
     },
     {
@@ -96,11 +96,16 @@ const Audio = () => {
 
   return (
     <>
-      <Header to='/audio-page' logo={Logo} links={headerLinks} />
+      <Header 
+        to='/audio-page' 
+        logo={Logo} 
+        links={headerLinks} 
+        booking={{text: 'Booking', endpoint: '/booking-audio'}}
+      />
       <HeroSection data={data} />
       <div className='container'>
         <VoicerSection id='about-us' data={aboutSection} />
-        {/* <QualitySoundSection/> */}
+        <QualitySoundSection/>
       </div>
       <OurProjects id='our-projects' />
       <Pricing prices={prices} page='audio' id='price-section' />

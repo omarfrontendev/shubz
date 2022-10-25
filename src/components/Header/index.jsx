@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 import './Header.css'
 
-const Header = ({ page, logo, links, to }) => {
+const Header = ({ page, logo, links, to, booking }) => {
 
   const [open, setOpen] = useState(false);
 
@@ -26,13 +26,13 @@ const Header = ({ page, logo, links, to }) => {
             {page !== 'home' && (<li className={`link ${page}`}>
               <Link to='/shubz'>Home</Link>
             </li>)}
-            {links.map(link => (
+            {links && links.map(link => (
               <li className={`link ${page}`} key={link.id}>
                 <a href={`#${link.section}`}>{link.text}</a>
               </li>))}
-            <li className={`link ${page}`}>
-              <Link to='/contact-us' href={`#social`}>Contact Us</Link>
-            </li>
+            {booking && <li className={`link ${page}`}>
+              <Link to={booking.endpoint || '/contact-us'} href={`#social`}>{booking.text}</Link>
+            </li>}
             {/* <li className={`link ${page}`}>
               <Link to='/distribution' href={`#social`}>distribution</Link>
             </li> */}

@@ -143,7 +143,13 @@ const Photography = () => {
 
   return (
     <>
-      <Header to='/photography-page' page='ph' logo={Logo} links={headerLinks} />
+      <Header 
+        to='/photography-page' 
+        page='ph' 
+        logo={Logo} 
+        links={headerLinks} 
+        booking={{text: 'Booking', endpoint: '/booking-photography'}}
+      />
       <HeroSection data={data} page={'photography'} />
       <div className="container" style={{overflow: 'hidden'}}>
         <VoicerSection data={aboutSection} page='photography' />

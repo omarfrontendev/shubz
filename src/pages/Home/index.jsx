@@ -38,7 +38,12 @@ const Home = () => {
 
   return (
     <div className='home__page'>
-      <Header page='home' logo={Logo} links={links} />
+      <Header 
+        page='home' 
+        logo={Logo} 
+        links={links} 
+        booking={{text: 'Contact Us', endpoint: '/contact-us'}}
+      />
       <MainHero />
       <Categories id='categories-section' />
       <WhyUs id='WhyUs-section' />

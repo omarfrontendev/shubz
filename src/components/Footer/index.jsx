@@ -18,11 +18,11 @@ const Footer = ({ type, links }) => {
   return (
     <footer className='footer' id='social'>
       <div className="container">
-        <ul>
+        {links && <ul>
           {links.map((link, i)=> (
             <li className={`${type === 'TV/FILM' ? 'TVFILM' : type }`} key={link.id}><a data-aos="fade-up" data-aos-delay={`${i}00`} href={`#${link.section}`} rel="noreferrer">{link.text}</a></li>
           ))}
-        </ul>
+        </ul>}
         {type === 'home' && <img data-aos="fade-up" data-aos-delay='400' className='footer__logo' src={FooterLogo} alt='' />}
         {type !== 'home' && <h2 className={`footer__brand ${type === 'Photography' ? 'ph' : type === 'TV/FILM' ? 'tv' : ''}`} data-aos="fade-up" data-aos-delay='400'>
           <span>{type}</span>

@@ -24,7 +24,7 @@ const QualitySoundSection = () => {
           </p>
         </div>
         <div className="quality__rigth__col">
-          <Button>
+          <Button to='/contact-us'>
             <div className="quality__btn">
               <MicIcon /> book session now
             </div>
