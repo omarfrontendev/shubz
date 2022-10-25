@@ -40,7 +40,7 @@ const BookingPhotography = () => {
     {
       id: 'select__box',
       label: 'Studio Service:',
-      options: ['Recording', 'Productions', 'Mixing', 'Engineering']
+      options: ['Photoshoot', 'Productions', 'Post Production', 'Product Design', 'Weddings', 'Portraits', 'Commercial shoots']
     },
     {
       id: 'select__box',

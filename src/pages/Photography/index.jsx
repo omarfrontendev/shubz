@@ -150,7 +150,7 @@ const Photography = () => {
         links={headerLinks} 
         booking={{text: 'Booking', endpoint: '/booking-photography'}}
       />
-      <HeroSection data={data} page={'photography'} />
+      <HeroSection data={data} page={'photography'} to='/booking-photography' />
       <div className="container" style={{overflow: 'hidden'}}>
         <VoicerSection data={aboutSection} page='photography' />
       </div>
@@ -197,7 +197,7 @@ const Photography = () => {
         text={commercialShoots.text} 
       />
       <OurPhotographyWorks id='our-works' />
-      <Pricing prices={prices} page='ph' id='price-section' />
+      <Pricing prices={prices} page='ph' id='price-section' to='/booking-photography' />
       <PhotographyTeam id='photographers' />
       <PhotographyBlogs id='blogs'/>
       <Footer type='Photography' links={headerLinks} />

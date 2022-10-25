@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './HeroSection.css'
 
-const HeroSection = ({ data, page }) => {
+const HeroSection = ({ data, page, to }) => {
 
   const settings = {
     dots: true,
@@ -32,6 +32,7 @@ const HeroSection = ({ data, page }) => {
               title2={d.title2}
               subtitle={d.subtitle}
               img={d.img}
+              to={to}
             />
           ))}
           {page === 'tv' && data.map(d => (

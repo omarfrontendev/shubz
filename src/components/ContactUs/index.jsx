@@ -1,10 +1,12 @@
-import React from 'react'
-import Button from '../UI/Button'
+import React, { useEffect } from 'react'
 import Image from '../images/25.10.2022_02.03.20_REC.png'
 
 import './ContactUs.css'
 
 const ContactUs = ({ page, fileds, type }) => {
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
   return (
     <>
     <div className="container">

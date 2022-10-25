@@ -40,7 +40,7 @@ const BookingFilming = () => {
     {
       id: 'select__box',
       label: 'Studio Service:',
-      options: ['Recording', 'Productions', 'Mixing', 'Engineering']
+      options: ['Weddings', 'TV Shows', 'Video Ads', 'Music Videos', 'Film Production']
     },
     {
       id: 'select__box',

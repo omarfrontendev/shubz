@@ -13,7 +13,6 @@ import VoicerImage from "../components/images/img-video.png";
 import Logo from '../components/images/audwhite.png'
 import { useEffect } from 'react'
 import PhotographyTeam from '../components/PhotographyTeam'
-import Pricing from '../components/Pricing'
 
 const Audio = () => {
 
@@ -102,13 +101,12 @@ const Audio = () => {
         links={headerLinks} 
         booking={{text: 'Booking', endpoint: '/booking-audio'}}
       />
-      <HeroSection data={data} />
+      <HeroSection data={data} to='/booking-audio' />
       <div className='container'>
         <VoicerSection id='about-us' data={aboutSection} />
         <QualitySoundSection/>
       </div>
       <OurProjects id='our-projects' />
-      <Pricing prices={prices} page='audio' id='price-section' />
       <OurClients id='our-clients' />
       <PhotographyTeam type='audio' id='our-engineers' />
       <Footer type='Audio' links={headerLinks} />

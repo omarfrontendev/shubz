@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react'
 import { BsCheck2All } from 'react-icons/bs'
 import { BiDollar } from 'react-icons/bi'
+import { Link } from 'react-router-dom';
 import Aos from "aos";
 
 import "aos/dist/aos.css";
 import './Pricing.css'
 
-const Pricing = ({ prices, id, page }) => {
+const Pricing = ({ prices, id, page, to }) => {
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
@@ -34,7 +35,7 @@ const Pricing = ({ prices, id, page }) => {
                   </li>
                 ))}
               </ul>
-              <button className='choose__btn'>Get Started</button>
+              <Link to={to} className='choose__btn'>Get Started</Link>
             </div>
           ))}
         </div>

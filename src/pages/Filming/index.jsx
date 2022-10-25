@@ -215,7 +215,7 @@ const Filming = () => {
         links={headerLinks} 
         booking={{text: 'Booking', endpoint: '/booking-filming'}}
       />
-      <HeroSection page='tv' data={movies} />
+      <HeroSection page='tv' data={movies} to='/booking-filming' />
       <WeddingSection id='wedding' />
       <section className='filming__section movies' id='movies'>
         <div className="container">
@@ -254,7 +254,7 @@ const Filming = () => {
           {/* <Button page='tv'>Show All Music</Button> */}
         </div>
       </section>
-      <Pricing prices={prices} page='tv' id='price-section' />
+      <Pricing prices={prices} page='tv' id='price-section' to='/booking-filming' />
       <Footer type='TV/FILM' links={headerLinks} />
     </div>
   )
