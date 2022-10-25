@@ -1,4 +1,4 @@
-.photography__blogs {
+  .photography__blogs {
   margin: 130px 0;
 }
 .photography__blogs .section__title {
@@ -87,6 +87,33 @@
   width: 30px;
   height: 3px;
   background-color: var(--color__purple);
+}
+.home__page .photography__blogs .section__title {
+  background: linear-gradient(90deg, #743A50 0%, #DEA439 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.home__page .photography__blogs .section__subtitle {
+  text-align: center;
+  color: var(--color__gray);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto 40px;
+}
+.home__page .photography__blogs .section__title::after {
+  display: none;
+}
+.home__page .photography__blogs .news__desc {
+  color: #FFF;
+  margin-bottom: 10px;
+}
+.home__page .photography__blogs .blogs__container .blog__box > span,
+.home__page .photography__blogs .blogs__container .blog__box h3 {
+  color: #FFF;
 }
 @media(max-width: 991px) {
   .photography__blogs .blogs__container .blog__box { 

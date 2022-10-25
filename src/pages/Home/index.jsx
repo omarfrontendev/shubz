@@ -7,7 +7,9 @@ import Header from '../../components/Header'
 import Logo from '../../components/images/headerlogowhite.png'
 import MainHero from '../../components/MainHero'
 import OtherServices from '../../components/OtherServices'
+import PhotographyBlogs from '../../components/PhotographyBlogs'
 import PhotographyTeam from '../../components/PhotographyTeam'
+import Wanted from '../../components/Wanted'
 import WhyUs from '../../components/WhyUs'
 
 import './Home.css'
@@ -35,6 +37,29 @@ const Home = () => {
       section: 'our-team'
     },
   ];
+  const lastestNews = [
+    {
+      id: 1,
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2Fbasumoh%202.jpg?alt=media&token=3203acdf-8ba6-46cd-9942-c3e67fa77534',
+      title: 'basumoh',
+      date: 'JUNE 6, 2016',
+      desc: 'The final parts of Spitfire’s Studio Orchestra Library are released…'
+    },
+    {
+      id: 5,
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2Flatonnes%201.jpg?alt=media&token=1e14a660-b6d2-4852-a8bb-8bb9ea9eb626',
+      title: 'latonnes',
+      date: 'JUNE 6, 2016',
+      desc: 'The final parts of Spitfire’s Studio Orchestra Library are released…'
+    },
+    {
+      id: 6,
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-images%2Fnetima1.jpg?alt=media&token=3dfd814b-f8b7-4d42-8321-2f60404d3352',
+      title: 'netima',
+      date: 'JUNE 6, 2016',
+      desc: 'The final parts of Spitfire’s Studio Orchestra Library are released…'
+    }
+  ];
 
   return (
     <div className='home__page'>
@@ -50,6 +75,8 @@ const Home = () => {
       <OtherServices />
       <DigitalMedia id='our-categories' />
       <Clients id='clients' />
+      <Wanted />
+      <PhotographyBlogs data={lastestNews} title='Latest News' subtitle='Find out about everything happening here at Voicer. Keep an eye out here for all of our upcoming events' />
       <PhotographyTeam type='home' id='our-team' />
       <Footer type='home' links={links} />
     </div>

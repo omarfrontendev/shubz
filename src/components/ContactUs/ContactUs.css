@@ -99,3 +99,9 @@
 .contact__us .section__title::after {
   display: none;
 }
+@media(max-width: 991px) {
+  .contact__content {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
