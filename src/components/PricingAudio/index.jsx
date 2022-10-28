@@ -39,7 +39,7 @@ const PricingAudio = () => {
         </p>
         <div className="audio__booking__content">
           {data.map(box => (
-            <Link to='/booking-audio' className='single__book__box'>
+            <Link to='/booking-audio' key={box.id} className='single__book__box'>
               <div>{box.icon}{box.title}</div>
               <p>from <span>${box.price}/hour</span></p>
             </Link>

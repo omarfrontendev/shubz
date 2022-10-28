@@ -6,6 +6,7 @@ import TVCommercials from '../TVCommercials';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './HeroSection.css'
+import AudioPlayer from '../AudioPlayer';
 
 const HeroSection = ({ data, page, to }) => {
 
@@ -49,6 +50,7 @@ const HeroSection = ({ data, page, to }) => {
             />
           ))}
         </Slider>
+        {page === 'audio' && <AudioPlayer />}
     </section>
   )
 }

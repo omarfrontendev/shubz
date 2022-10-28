@@ -102,7 +102,7 @@ const Audio = () => {
         links={headerLinks} 
         booking={{text: 'Booking', endpoint: '/booking-audio'}}
       />
-      <HeroSection data={data} to='/booking-audio' />
+      <HeroSection data={data} to='/booking-audio' page='audio' />
       <div className='container'>
         <VoicerSection id='about-us' data={aboutSection} />
         <QualitySoundSection/>

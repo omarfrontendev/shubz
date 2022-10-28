@@ -17,10 +17,10 @@ import './Home.css'
 const Home = () => {
 
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }, []);
 
-  const links =[
+  const links = [
     {
       id: 2,
       text: 'Why Us',
@@ -63,11 +63,11 @@ const Home = () => {
 
   return (
     <div className='home__page'>
-      <Header 
-        page='home' 
-        logo={Logo} 
-        links={links} 
-        booking={{text: 'Contact Us', endpoint: '/contact-us'}}
+      <Header
+        page='home'
+        logo={Logo}
+        links={links}
+        booking={{ text: 'Contact Us', endpoint: '/contact-us' }}
       />
       <MainHero />
       <Categories id='categories-section' />
