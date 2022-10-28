@@ -198,6 +198,182 @@ const Photography = () => {
     },
   ];
 
+  const collections = [
+    {
+      id: 2,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '0',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/collection%2FIMG_0899.jpg?alt=media&token=5a9718bf-6db0-4e4d-ba01-689043017130',
+
+    },
+    {
+      id: 1,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/collection%2FIMG_0891.jpg?alt=media&token=de8677e6-38bd-4e20-8a06-1b0fe9dfa843',
+      delay: '200'
+    },
+    {
+      id: 3,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '400',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/collection%2FIMG_0467.jpg?alt=media&token=bb240548-97e4-48bf-8989-745467dee0b2',
+    },
+    {
+      id: 4,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '00',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/collection%2FIMG_0470.jpg?alt=media&token=06e76cf9-49af-48f1-a0ca-458c730d926d',
+    },
+    {
+      id: 5,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '200',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/collection%2FIMG_0471.jpg?alt=media&token=75964d70-6f9e-4002-942f-b8372849c8e6',
+    },
+    {
+      id: 6,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '400',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/collection%2FIMG_0472.jpg?alt=media&token=71df04de-72f1-40d6-9d6b-cc3c1acade3b',
+    },
+    {
+      id: 7,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '000',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/collection%2FIMG_0473.jpg?alt=media&token=beb86a6f-f30a-46c9-a041-6132b934f41a',
+    },
+    {
+      id: 8,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '200',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/collection%2FIMG_0850.jpg?alt=media&token=cf15ebe6-e998-4491-b2f9-78afa9187277',
+    },
+    {
+      id: 9,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '400',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/collection%2FIMG_0878.jpg?alt=media&token=1f378515-19b5-4fdb-8ace-bfa2178be1cf',
+    },
+    {
+      id: 10,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '000',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/collection%2FIMG_0881.jpg?alt=media&token=d0d2bce2-76a3-4dcc-aaee-81dfa881cdc9',
+    },
+    {
+      id: 11,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '200',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/collection%2FIMG_0885.jpg?alt=media&token=4a419620-ad6d-4659-bed7-2e6aec5d0d22',
+    },
+    {
+      id: 12,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '400',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/collection%2FIMG_0890.jpg?alt=media&token=ac4e3b0b-c190-4e7c-8299-2898824b3b74',
+    },
+  ];
+
+  const MorePics = [
+    {
+      id: 2,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '00',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/moreImage%2FAda%20Bestie.jpg?alt=media&token=2bf35cba-be40-464b-ac59-73ed4b16790a',
+
+    },
+    {
+      id: 10,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '200',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/moreImage%2FRetouch_.jpg?alt=media&token=3b75fc98-b634-42d8-8118-fab10463bf04',
+    },
+    {
+      id: 11,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '400',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/moreImage%2Fbenita.jpg?alt=media&token=beeb5d02-5595-43f8-b7cd-1903efa2611c',
+    },
+    {
+      id: 1,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/moreImage%2FAkay.jpg?alt=media&token=1e41cbc6-5010-4515-842f-7fe0d95ca5c5',
+      delay: '0'
+    },
+    {
+      id: 7,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '200',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/moreImage%2FJohnero.jpg?alt=media&token=5a405f90-c35e-45b6-8060-57dd9c5d8453',
+    },
+    {
+      id: 3,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '400',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/moreImage%2FIfiok%206%20(1).jpg?alt=media&token=e285a959-5e91-40da-a2e6-de9637e10feb',
+    },
+    {
+      id: 12,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '00',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/moreImage%2Fportrait.jpg?alt=media&token=1bb474a5-97d8-499d-87a7-a8e63f6dd6c0',
+    },
+    {
+      id: 4,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '200',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/moreImage%2FDSC_9527-2.jpg?alt=media&token=37e78ba1-e017-4593-90dc-e5f13030d744',
+    },
+    {
+      id: 6,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '400',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/moreImage%2FJeremiah%20Portrait%20BTS.jpg?alt=media&token=6ab0c548-5749-41f2-970b-c7eb11d02a59',
+    },
+    {
+      id: 8,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '00',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/moreImage%2FMc%20Beto2.jpg?alt=media&token=505beeca-d568-4592-9949-9788f29910a6',
+    },
+    {
+      id: 9,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '200',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/moreImage%2FProf.%20Emmanuel.jpg?alt=media&token=d8ab2c23-ae01-4174-b4a6-ca7cb3b737f6',
+    },
+    {
+      id: 5,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '400',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/moreImage%2FCeee.jpg?alt=media&token=1d22ee0d-c3f9-4739-af09-625dbd91de9a',
+    },
+  ];
+
   return (
     <>
       <Header 
@@ -253,7 +429,8 @@ const Photography = () => {
         subtitle={commercialShoots.subtitle} 
         text={commercialShoots.text} 
       />
-      <OurPhotographyWorks id='our-works' />
+      <OurPhotographyWorks id='our-works' title='Collections' images={collections} subtitle='collection' />
+      <OurPhotographyWorks id='' title='More Pics' images={MorePics} subtitle='more pics' />
       <Pricing prices={prices} page='ph' id='price-section' to='/booking-photography' />
       <PhotographyTeam id='photographers' />
       <PhotographyBlogs id='blogs' data={graphics} title='Graphics' />

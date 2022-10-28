@@ -18,7 +18,6 @@ const AudioPlayer = () => {
           barWidth: 0
         }}
         zoom={0}
-        volum={true}
         className='wave__player'
       />
     </div>
