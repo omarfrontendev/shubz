@@ -38,9 +38,9 @@ header.home {
   backdrop-filter: blur(0px);
   background-color: transparent;
 }
-.main__header.home {
+/* .main__header.home {
   background-color: transparent;
-}
+} */
 .main__header.home .logo {
   width: 80px;
 }

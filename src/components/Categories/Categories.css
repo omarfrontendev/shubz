@@ -52,10 +52,27 @@
   white-space: pre;
 }
 .categories__content a:hover .main__button {
-  transform: scale(.8555555);
+  animation: bigger .6s ease-in-out alternate infinite;
 }
 .categories__content img {
   width: 150px;
+  transition: .3s ease-in-out;
+}
+.categories__content a:hover img {
+  animation: updown .6s linear alternate infinite;
+}
+@keyframes updown {
+  to{
+    transform: translateY(-8px);
+  }
+}
+@keyframes bigger {
+  form {
+    transform: scale(.8);
+  }
+  to{
+    transform: scale(.85555555555);
+  }
 }
 @media(max-width: 991px) {
   .categories__content {

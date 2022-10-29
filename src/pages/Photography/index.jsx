@@ -92,29 +92,6 @@ const Photography = () => {
     text: 'FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .', 
   };
 
-  const headerLinks = [
-    {
-      id: 5,
-      text: 'Works',
-      section: 'our-works' 
-    },
-    {
-      id: 2,
-      text: 'Pricing',
-      section: 'price-section' 
-    },
-    {
-      id: 6,
-      text: 'Photographers',
-      section: 'photographers' 
-    },
-    {
-      id: 7,
-      text: 'Graphics',
-      section: 'blogs' 
-    },
-  ];
-
   const prices = [
     {
       id: 1,
@@ -374,6 +351,127 @@ const Photography = () => {
     },
   ];
 
+  const weddingsImage = [
+    {
+      id: 2,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '00',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/weedings-images%2F12.1.jpg?alt=media&token=c9f3a0ed-0789-4d3c-9f80-21bf1e136512',
+
+    },
+    {
+      id: 10,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '200',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/weedings-images%2F13jpg.jpg?alt=media&token=e7f22ed0-8c2a-47e0-af6f-f15fd8aba108',
+    },
+    {
+      id: 11,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '400',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/weedings-images%2F14.jpg?alt=media&token=2ad1c82c-f26d-4ecc-858a-54277310c22f',
+    },
+    {
+      id: 1,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/weedings-images%2F15.jpg?alt=media&token=1c1c49bf-ea2f-4bc3-9247-09222ddea292',
+      delay: '0'
+    },
+    {
+      id: 7,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '200',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/weedings-images%2F16.jpg?alt=media&token=0e53330a-5452-4d82-8deb-446501243c39',
+    },
+    {
+      id: 3,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '400',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/weedings-images%2F20.jpg?alt=media&token=9fd20991-305d-4053-9c6d-03466da1bff0',
+    },
+    {
+      id: 12,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '00',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/weedings-images%2F25.jpg?alt=media&token=939804ca-061b-4ac0-8148-36cf7ccc5397',
+    },
+    {
+      id: 4,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '200',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/weedings-images%2F27.jpg?alt=media&token=08b95b44-1054-4ac4-9b15-9abfa8304f03',
+    },
+    {
+      id: 6,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '400',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/weedings-images%2F28.jpg?alt=media&token=94ed8963-28fe-4e9f-b05b-9a9e52f63383',
+    },
+    {
+      id: 8,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '00',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/weedings-images%2F32.jpg?alt=media&token=d719dc7d-27ce-4634-b820-1fe34e199f1a',
+    },
+    {
+      id: 9,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '200',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/weedings-images%2FFor%20whatsapp.jpg?alt=media&token=ad613edc-fb1c-4fe6-82dc-e980c7852fbe',
+    },
+    {
+      id: 5,
+      title: 'BLACK & WHITE FASHION',
+      type: 'Black&White',
+      delay: '400',
+      img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/weedings-images%2FIMG_1851.jpg?alt=media&token=9de84ecc-c82e-4c0b-a292-94f5ce078c7b',
+    },
+  ];
+
+  const headerLinks = [
+    {
+      id: 5,
+      text: 'Collectios',
+      section: 'collection' 
+    },
+    {
+      id: 5,
+      text: 'Weddings',
+      section: 'Weddings__section' 
+    },
+    {
+      id: 5,
+      text: 'More Pics',
+      section: 'More__Pics' 
+    },
+    {
+      id: 2,
+      text: 'Pricing',
+      section: 'price-section' 
+    },
+    {
+      id: 6,
+      text: 'Photographers',
+      section: 'photographers' 
+    },
+    {
+      id: 7,
+      text: 'Graphics',
+      section: 'blogs' 
+    },
+  ];
+
   return (
     <>
       <Header 
@@ -429,8 +527,9 @@ const Photography = () => {
         subtitle={commercialShoots.subtitle} 
         text={commercialShoots.text} 
       />
-      <OurPhotographyWorks id='our-works' title='Collections' images={collections} subtitle='collection' />
-      <OurPhotographyWorks id='' title='More Pics' images={MorePics} subtitle='more pics' />
+      <OurPhotographyWorks id='collection' title='Collections' images={collections} subtitle='collection' />
+      <OurPhotographyWorks id='Weddings__section' title='Weddings' images={weddingsImage} subtitle='more pics' />
+      <OurPhotographyWorks id='More__Pics' title='More Pics' images={MorePics} subtitle='more pics' />
       <Pricing prices={prices} page='ph' id='price-section' to='/booking-photography' />
       <PhotographyTeam id='photographers' />
       <PhotographyBlogs id='blogs' data={graphics} title='Graphics' />
