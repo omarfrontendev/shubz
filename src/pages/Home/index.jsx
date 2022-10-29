@@ -36,6 +36,11 @@ const Home = () => {
       text: 'Our Team',
       section: 'our-team'
     },
+    {
+      id: 5,
+      text: 'Blogs',
+      section: 'news'
+    },
   ];
   const lastestNews = [
     {
@@ -76,7 +81,7 @@ const Home = () => {
       <DigitalMedia id='our-categories' />
       <Clients id='clients' />
       <Wanted />
-      <PhotographyBlogs data={lastestNews} title='Latest News' subtitle='Find out about everything happening here at Voicer. Keep an eye out here for all of our upcoming events' />
+      <PhotographyBlogs id='news' data={lastestNews} title='Latest News' subtitle='Find out about everything happening here at Voicer. Keep an eye out here for all of our upcoming events' />
       <PhotographyTeam type='home' id='our-team' />
       <Footer type='home' links={links} />
     </div>
