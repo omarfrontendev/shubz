@@ -16,12 +16,12 @@ const DigitalMedia = ({ id }) => {
             Download <span>Creative</span> Digital Media Assets ?
           </h2>
           <div className="digital__btns">
-            <a href='https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/' target='_blank'><BsMusicNote className='digital__icon' />royalty-free music</a>
-            <a href='https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/' target='_blank'><BsStack className='digital__icon' />graphic templates</a>
-            <a href='https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/' target='_blank'><FaBox />web templates</a>
-            <a href='https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/' target='_blank'><IoMdPhotos className='digital__icon' />stock photos</a>
-            <a href='https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/' target='_blank'><HiVideoCamera className='digital__icon' />stock videos</a>
-            <a href='https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/' target='_blank'><BsThreeDots className='digital__icon' />browse all</a>
+            <a href='https://jocular-phoenix-4ce423.netlify.app/' target='_blank' rel="noreferrer"><BsMusicNote className='digital__icon' />royalty-free music</a>
+            <a href='https://jocular-phoenix-4ce423.netlify.app/' target='_blank' rel="noreferrer"><BsStack className='digital__icon' />graphic templates</a>
+            <a href='https://jocular-phoenix-4ce423.netlify.app/' target='_blank' rel="noreferrer"><FaBox />web templates</a>
+            <a href='https://jocular-phoenix-4ce423.netlify.app/' target='_blank' rel="noreferrer"><IoMdPhotos className='digital__icon' />stock photos</a>
+            <a href='https://jocular-phoenix-4ce423.netlify.app/' target='_blank' rel="noreferrer"><HiVideoCamera className='digital__icon' />stock videos</a>
+            <a href='https://jocular-phoenix-4ce423.netlify.app/' target='_blank' rel="noreferrer"><BsThreeDots className='digital__icon' />browse all</a>
           </div>
         </div>
       </div>

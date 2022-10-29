@@ -33,14 +33,8 @@ const Header = ({ page, logo, links, to, booking }) => {
             {booking && <li className={`link ${page}`}>
               <Link to={booking.endpoint || '/contact-us'} href={`#social`}>{booking.text}</Link>
             </li>}
-            {/* <li className={`link ${page}`}>
-              <Link to='/distribution' href={`#social`}>distribution</Link>
-            </li> */}
-            {/* <li className={`link ${page}`}>
-              <a href={`#social`}>Social</a>
-            </li> */}
             <li className={`link car__icon ${page}`}>
-              <a href="https://63501066b6f18f23fbe48a8d--subtle-marzipan-99a414.netlify.app/" target='_blank'><CartIcon /></a>
+              <a href="https://jocular-phoenix-4ce423.netlify.app/" target='_blank' rel="noreferrer"><CartIcon /></a>
             </li>
           </ul>
           <a className='open__btn' onClick={() => setOpen(true)}>

@@ -446,12 +446,12 @@ const Photography = () => {
       section: 'collection' 
     },
     {
-      id: 5,
+      id: 9,
       text: 'Weddings',
       section: 'Weddings__section' 
     },
     {
-      id: 5,
+      id: 10,
       text: 'More Pics',
       section: 'More__Pics' 
     },
