@@ -7,7 +7,7 @@ import MainSlider from '../MainSlider';
 import "aos/dist/aos.css";
 import './OurPhotographyWorks.css'
 
-const OurPhotographyWorks = ({ id, title, images, subtitle }) => {
+const OurPhotographyWorks = ({ id, title, images, subtitle, ph }) => {
 
   const [all, setAll] = useState(false);
   const [openSlider, setOpenSider] = useState(false);
@@ -22,7 +22,7 @@ const OurPhotographyWorks = ({ id, title, images, subtitle }) => {
       <section className='photography__works__section' id={id}>
         <div className="ph__works__title" data-aos="fade-right">
           <h2 className="section__title ph">{title}</h2>
-          <p className='ph__works__subtitle'>FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THEOCEAN.</p>
+          <p className='ph__works__subtitle'>{ph ? ph : 'FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THEOCEAN'}.</p>
           {/* <Button page='photography'>VIEW ALL WORKS</Button> */}
         </div>
         <div style={{overflow: 'hidden'}}>

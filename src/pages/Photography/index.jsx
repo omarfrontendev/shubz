@@ -528,7 +528,9 @@ const Photography = () => {
         text={commercialShoots.text} 
       />
       <OurPhotographyWorks id='collection' title='Collections' images={collections} subtitle='collection' />
-      <OurPhotographyWorks id='Weddings__section' title='Weddings' images={weddingsImage} subtitle='more pics' />
+      <OurPhotographyWorks id='Weddings__section' title='Weddings' images={weddingsImage} subtitle='weddings' ph='t is a know phenomenon that a wedding ceremony is usually done once and the memories are needed to linger forever. A life time event cannot be well detailed through mere pictures or low quality video. A low quality video makes the event boring and absolutely ruins the long lasing memory.
+
+SHUBZ Visuals creates high-end photography + cinematography for brides and grooms. We capture your WEDDING, also your social EVENTS and turn it into a forever event in form of cinematic pictures.' />
       <OurPhotographyWorks id='More__Pics' title='More Pics' images={MorePics} subtitle='more pics' />
       <Pricing prices={prices} page='ph' id='price-section' to='/booking-photography' />
       <PhotographyTeam id='photographers' />
