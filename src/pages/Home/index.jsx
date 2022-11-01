@@ -30,7 +30,7 @@ const Home = () => {
         top: offsetTop,
       })
     }
-  }, [currentSectionId, offsetTop])
+  }, [currentSectionId, offsetTop]);
 
   const links = [
     {
@@ -89,13 +89,32 @@ const Home = () => {
       />
       <MainHero />
       <Categories id='categories-section' />
-      <WhyUs setOffsetTop={setOffsetTop} id={2} currentSectionId={currentSectionId} />
+      <WhyUs 
+        id={2} 
+        setOffsetTop={setOffsetTop} 
+        currentSectionId={currentSectionId}
+      />
       <OtherServices />
       <DigitalMedia id='our-categories' />
-      <Clients setOffsetTop={setOffsetTop} id={3} currentSectionId={currentSectionId} />
+      <Clients 
+        id={3} 
+        setOffsetTop={setOffsetTop} 
+        currentSectionId={currentSectionId} 
+      />
       <Wanted />
-      <PhotographyBlogs setOffsetTop={setOffsetTop} id={6} currentSectionId={currentSectionId} data={lastestNews} title='Latest News' subtitle='Find out about everything happening here at Voicer. Keep an eye out here for all of our upcoming events' />
-      <PhotographyTeam setOffsetTop={setOffsetTop} currentSectionId={currentSectionId} type='home' id={5} />
+      <PhotographyBlogs 
+        id={6} 
+        setOffsetTop={setOffsetTop} 
+        currentSectionId={currentSectionId} 
+        data={lastestNews} 
+        title='Latest News' 
+        subtitle='Find out about everything happening here at Voicer. Keep an eye out here for all of our upcoming events' />
+      <PhotographyTeam 
+        id={5}
+        setOffsetTop={setOffsetTop} 
+        currentSectionId={currentSectionId} 
+        type='home' 
+      />
       <Footer type='home' links={links} />
     </div>
   )

@@ -8,9 +8,22 @@ import Aos from "aos";
 
 import "aos/dist/aos.css";
 import './OurProjects.css'
+import { useRef } from 'react';
 
-const OurProjects = ({ id, projects, title }) => {
+const OurProjects = ({ id, projects, title, currentSectionId, setOffsetTop }) => {
 
+  
+  useEffect(function () {
+    Aos.init({ duration: 1000 });
+  }, []);
+  
+  const section = useRef(null);
+  useEffect(() => {
+    if(currentSectionId === id) {
+      setOffsetTop(section.current.offsetTop);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSectionId, id]);
 
   const settings = {
     infinite: true,
@@ -39,12 +52,9 @@ const OurProjects = ({ id, projects, title }) => {
     ]
   };
 
-  useEffect(function () {
-    Aos.init({ duration: 1000 });
-  }, []);
 
   return (
-    <section id={id} className='our__project__section'>
+    <section ref={section} className='our__project__section'>
       <div className="container">
         <img className='image__bgk' src={Image} alt='' />
         <h2 data-aos="fade-up" className='section__title'>{title}</h2>

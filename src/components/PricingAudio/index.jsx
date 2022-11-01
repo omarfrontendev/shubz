@@ -5,8 +5,18 @@ import { AiOutlineSound } from 'react-icons/ai'
  
 import './PricingAudio.css'
 import { Link } from 'react-router-dom'
+import { useRef } from 'react'
+import { useEffect } from 'react'
 
-const PricingAudio = () => {
+const PricingAudio = ({ id, currentSectionId, setOffsetTop }) => {
+
+  const section = useRef(null);
+  useEffect(() => {
+    if(currentSectionId === id) {
+      setOffsetTop(section.current.offsetTop);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSectionId, id]);
 
   const data = [
     {
@@ -30,7 +40,7 @@ const PricingAudio = () => {
   ]
 
   return (
-    <section className='pricing__audio'>
+    <section className='pricing__audio' ref={section}>
       <div className="container">
         <h2 className='section__title'>Booking</h2>
         <p className='section__subtitle'>

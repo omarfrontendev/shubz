@@ -3,10 +3,18 @@ import Aos from "aos";
 
 import "aos/dist/aos.css";
 import './OurClients.css'
+import { useRef } from 'react';
 
-const OurClients = ({ id }) => {
+const OurClients = ({ id, currentSectionId, setOffsetTop }) => {
 
   const [showClient, setShowClient] = useState('');
+  const section = useRef(null);
+  useEffect(() => {
+    if(currentSectionId === id) {
+      setOffsetTop(section.current.offsetTop);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSectionId, id]);
 
   const clients = [
     {
@@ -134,8 +142,8 @@ const OurClients = ({ id }) => {
   }, [])
 
   return (
-    <section id={id} className='clients__page'>
-      <div className="container">
+    <section className='clients__page'>
+      <div ref={section} className="container">
         <h2 data-aos="fade-up" className='section__title'>Our Clients</h2>
         <div data-aos="fade-up" className='box__of__client__name'><span>{showClient}</span></div>
         <div className="clients__container">

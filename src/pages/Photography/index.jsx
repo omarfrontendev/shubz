@@ -12,12 +12,24 @@ import Footer from '../../components/Footer'
 import Banner1 from '../../components/images/Photography/banner/pexels-zukiman-mohamad-22185.jpg'
 import Banner2 from '../../components/images/Photography/banner/2.jpg'
 import Pricing from '../../components/Pricing';
+import { useState } from 'react';
 
 const Photography = () => {
 
   useEffect(() => {
     window.scrollTo(0,0);
   }, []);
+
+  const [currentSectionId, setCurrentSectionId] = useState(null)
+  const [offsetTop, setOffsetTop] = useState(null);
+  
+  useEffect(() => {
+    if(currentSectionId !== null) {
+      window.scrollTo({
+        top: offsetTop,
+      })
+    }
+  }, [currentSectionId, offsetTop]);
 
   const data = [
     {
@@ -441,32 +453,32 @@ const Photography = () => {
 
   const headerLinks = [
     {
-      id: 5,
+      id: 1,
       text: 'Collectios',
       section: 'collection' 
     },
     {
-      id: 9,
+      id: 2,
       text: 'Weddings',
       section: 'Weddings__section' 
     },
     {
-      id: 10,
+      id: 3,
       text: 'More Pics',
       section: 'More__Pics' 
     },
     {
-      id: 2,
+      id: 4,
       text: 'Pricing',
       section: 'price-section' 
     },
     {
-      id: 6,
+      id: 5,
       text: 'Photographers',
       section: 'photographers' 
     },
     {
-      id: 7,
+      id: 6,
       text: 'Graphics',
       section: 'blogs' 
     },
@@ -480,6 +492,7 @@ const Photography = () => {
         logo={Logo} 
         links={headerLinks} 
         booking={{text: 'Booking', endpoint: '/booking-photography'}}
+        setCurrentSectionId={setCurrentSectionId}
       />
       <HeroSection data={data} page={'photography'} to='/booking-photography' />
       <div className="container" style={{overflow: 'hidden'}}>
@@ -527,14 +540,52 @@ const Photography = () => {
         subtitle={commercialShoots.subtitle} 
         text={commercialShoots.text} 
       />
-      <OurPhotographyWorks id='collection' title='Collections' images={collections} subtitle='collection' />
-      <OurPhotographyWorks id='Weddings__section' title='Weddings' images={weddingsImage} subtitle='weddings' ph='t is a know phenomenon that a wedding ceremony is usually done once and the memories are needed to linger forever. A life time event cannot be well detailed through mere pictures or low quality video. A low quality video makes the event boring and absolutely ruins the long lasing memory.
-
-SHUBZ Visuals creates high-end photography + cinematography for brides and grooms. We capture your WEDDING, also your social EVENTS and turn it into a forever event in form of cinematic pictures.' />
-      <OurPhotographyWorks id='More__Pics' title='More Pics' images={MorePics} subtitle='more pics' />
-      <Pricing prices={prices} page='ph' id='price-section' to='/booking-photography' />
-      <PhotographyTeam id='photographers' />
-      <PhotographyBlogs id='blogs' data={graphics} title='Graphics' />
+      <OurPhotographyWorks 
+        id={1}
+        setOffsetTop={setOffsetTop} 
+        currentSectionId={currentSectionId} 
+        title='Collections' 
+        images={collections} 
+        subtitle='collection'
+      />
+      <OurPhotographyWorks 
+        id={2}
+        setOffsetTop={setOffsetTop} 
+        currentSectionId={currentSectionId} 
+        title='Weddings' 
+        images={weddingsImage} 
+        subtitle='weddings' 
+        ph='t is a know phenomenon that a wedding ceremony is usually done once and the memories are needed to linger forever. A life time event cannot be well detailed through mere pictures or low quality video. A low quality video makes the event boring and absolutely ruins the long lasing memory.
+        SHUBZ Visuals creates high-end photography + cinematography for brides and grooms. We capture your WEDDING, also your social EVENTS and turn it into a forever event in form of cinematic pictures.' 
+      />
+      <OurPhotographyWorks 
+        id={3}
+        setOffsetTop={setOffsetTop} 
+        currentSectionId={currentSectionId} 
+        title='More Pics' 
+        images={MorePics} 
+        subtitle='more pics' 
+      />
+      <Pricing
+        id={4}
+        setOffsetTop={setOffsetTop} 
+        currentSectionId={currentSectionId}  
+        prices={prices} 
+        page='ph' 
+        to='/booking-photography'
+      />
+      <PhotographyTeam         
+        id={5}
+        setOffsetTop={setOffsetTop} 
+        currentSectionId={currentSectionId}  
+      />
+      <PhotographyBlogs 
+        id={6}
+        setOffsetTop={setOffsetTop} 
+        currentSectionId={currentSectionId} 
+        data={graphics} 
+        title='Graphics' 
+      />
       <Footer type='Photography' links={headerLinks} />
     </>
   )

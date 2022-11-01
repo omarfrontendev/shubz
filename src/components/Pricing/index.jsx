@@ -6,15 +6,25 @@ import Aos from "aos";
 
 import "aos/dist/aos.css";
 import './Pricing.css'
+import { useRef } from 'react';
 
-const Pricing = ({ prices, id, page, to }) => {
+const Pricing = ({ prices, id, page, to, currentSectionId, setOffsetTop }) => {
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
   }, []);
 
+  const section = useRef(null);
+
+  useEffect(() => {
+    if(currentSectionId === id) {
+      setOffsetTop(section.current.offsetTop);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSectionId, id]);
+
   return (
-    <section className='pricing__section' id={id}>
+    <section ref={section} className='pricing__section' id={id}>
       <div className="container">
         <h2 className={`section__title ${page}`} data-aos="fade-up">Pricing Table</h2>
         <div className='pricing__content'>
