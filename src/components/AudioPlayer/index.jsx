@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react'
-// import Player from "react-wavy-audio";
 import PropTypes from 'prop-types'
 import WaveSurfer from 'wavesurfer.js'
 import { BsPlayCircle, BsPauseCircle } from 'react-icons/bs'
@@ -12,7 +11,6 @@ const AudioPlayer = ({ audio }) => {
   const containerRef = useRef();
   const waveSurferRef = useRef();
   const [isPlaying, toggleIsPlaying] = useState(false);
-  const [isMuted, toggleIsMuted] = useState(false);
   const [volume, setVolume] = useState('.5')
 
   useEffect(() => {
@@ -36,6 +34,8 @@ const AudioPlayer = ({ audio }) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [audio]);
 
+  console.log(volume)
+
   return (
     <div className='audio__player__container'>
       <button
@@ -44,20 +44,12 @@ const AudioPlayer = ({ audio }) => {
           toggleIsPlaying(waveSurferRef.current.isPlaying());
         }}
         type="button"
-        
       >
         {isPlaying ? <BsPauseCircle className='play__icon' /> : <BsPlayCircle className='play__icon' />}
       </button>
       <div ref={containerRef}  className='audio__wave' />
-      <button
-        onClick={() => {
-          waveSurferRef.current.toggleMute()
-          toggleIsMuted(prev => !prev)
-        }}
-        type="button"
-        
-      >
-        {!isMuted ? <GoUnmute className='play__icon' /> : <GoMute className='play__icon' />}
+      <button>
+        {volume !== '0' ? <GoUnmute className='play__icon' /> : <GoMute className='play__icon' />}
       </button>
       <input
         type="range"
@@ -71,11 +63,9 @@ const AudioPlayer = ({ audio }) => {
         }}
         onChange={(e) => {
           if(e.target.value === '0') {
-            toggleIsMuted(true);
             setVolume(e.target.value);
             waveSurferRef.current.setVolume(e.target.value);
           }else {
-            toggleIsMuted(false);
             setVolume(e.target.value);
             waveSurferRef.current.setVolume(e.target.value);
           }
