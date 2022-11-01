@@ -1,8 +1,19 @@
 import React from 'react'
+import { useEffect } from 'react';
+import { useRef } from 'react';
 
 import './clients.css'
 
-export default function Clients({ id }) {
+export default function Clients({ id, currentSectionId, setOffsetTop }) {
+
+  const ClientsSection = useRef(null);
+
+  useEffect(() => {
+    if(currentSectionId === id) {
+      setOffsetTop(ClientsSection.current.offsetTop);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSectionId, id]);
 
   const clients = [
     {
@@ -45,10 +56,10 @@ export default function Clients({ id }) {
       id: 'client10',
       img: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/clients%2Fchampion%20cover.png?alt=media&token=a6d98469-48a9-44de-b9c7-1de52a2e42d7'
     },
-  ]
+  ];
 
   return (
-    <div className='clients__section' id={id}>
+    <section ref={ClientsSection} className='clients__section' id={id}>
       <div className="container">
         <h2 className="section__title"><span>Who We Work For</span></h2>
         <p className='section__subtitle'>Whether you’re interested from LOGO DESIGNS - PRODUCT DESIGNS COMMERCIALS - TV TALKSHOWS, WEDDINGS - CORPORATE EVENTS, DOCUMENTARIES - MOVIES, MUSIC PRODUCTION - PODCASTS, MUSIC VIDEOS - Etc.</p>
@@ -60,6 +71,6 @@ export default function Clients({ id }) {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }

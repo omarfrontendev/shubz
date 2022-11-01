@@ -12,15 +12,32 @@ import Aos from "aos";
 
 import "aos/dist/aos.css";
 import './PhotographyBlogs.css'
+import { useRef } from 'react';
 
-const PhotographyBlogs = ({ id, data, subtitle, title }) => {
+const PhotographyBlogs = ({ 
+  id, 
+  data, 
+  subtitle, 
+  title, 
+  currentSectionId, 
+  setOffsetTop 
+}) => {
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
   }, []);
 
+  const section = useRef(null);
+
+  useEffect(() => {
+    if(currentSectionId === id) {
+      setOffsetTop(section.current.offsetTop);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSectionId, id]);
+
   return (
-    <section className='photography__blogs' id={id}>
+    <section ref={section} className='photography__blogs' id={id}>
       <div className="container">
         <h2 data-aos="fade-up" className="section__title ph">{title}</h2>
         {subtitle && <p data-aos="fade-up" className='section__subtitle'>{subtitle}</p>}

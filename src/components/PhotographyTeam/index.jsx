@@ -3,16 +3,26 @@ import React, { useEffect } from 'react'
 import Slider from "react-slick";
 import { BsTwitter } from 'react-icons/bs'
 import { FaLinkedinIn, FaFacebookF } from 'react-icons/fa'
+import { useRef } from 'react';
 import Aos from "aos";
 
 import "aos/dist/aos.css";
 import './PhotographyTeam.css'
 
-const PhotographyTeam = ({ id, type }) => {
+const PhotographyTeam = ({ id, type, currentSectionId, setOffsetTop }) => {
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
   }, []);
+
+  const section = useRef(null);
+
+  useEffect(() => {
+    if(currentSectionId === id) {
+      setOffsetTop(section.current.offsetTop);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSectionId, id]);
 
 
   const settings = {
@@ -118,7 +128,7 @@ const PhotographyTeam = ({ id, type }) => {
   ]
 
   return (
-    <section className={`photography__team ${type === 'home' ? 'home' : ''}`} id={id}>
+    <section ref={section} className={`photography__team ${type === 'home' ? 'home' : ''}`} id={id}>
       <h2 data-aos="fade-up" className={`section__title ${type === 'audio' ? '' : 'ph'}`}>Meet Our Team</h2>
       <p data-aos="fade-up" className='team__ph__subtitle'>We are a team of talented, passionate, driven crew to deliver the best work.</p>
       <div className="team__ph__slider">

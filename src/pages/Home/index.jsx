@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { useState } from 'react'
 import Categories from '../../components/Categories'
 import Clients from '../../components/Clients'
 import DigitalMedia from '../../components/DigitalMedia'
@@ -20,6 +21,17 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const [currentSectionId, setCurrentSectionId] = useState(null)
+  const [offsetTop, setOffsetTop] = useState(null);
+  
+  useEffect(() => {
+    if(currentSectionId !== null) {
+      window.scrollTo({
+        top: offsetTop,
+      })
+    }
+  }, [currentSectionId, offsetTop])
+
   const links = [
     {
       id: 2,
@@ -37,7 +49,7 @@ const Home = () => {
       section: 'our-team'
     },
     {
-      id: 5,
+      id: 6,
       text: 'Blogs',
       section: 'news'
     },
@@ -73,16 +85,17 @@ const Home = () => {
         logo={Logo}
         links={links}
         booking={{ text: 'Contact Us', endpoint: '/contact-us' }}
+        setCurrentSectionId={setCurrentSectionId}
       />
       <MainHero />
       <Categories id='categories-section' />
-      <WhyUs id='WhyUs-section' />
+      <WhyUs setOffsetTop={setOffsetTop} id={2} currentSectionId={currentSectionId} />
       <OtherServices />
       <DigitalMedia id='our-categories' />
-      <Clients id='clients' />
+      <Clients setOffsetTop={setOffsetTop} id={3} currentSectionId={currentSectionId} />
       <Wanted />
-      <PhotographyBlogs id='news' data={lastestNews} title='Latest News' subtitle='Find out about everything happening here at Voicer. Keep an eye out here for all of our upcoming events' />
-      <PhotographyTeam type='home' id='our-team' />
+      <PhotographyBlogs setOffsetTop={setOffsetTop} id={6} currentSectionId={currentSectionId} data={lastestNews} title='Latest News' subtitle='Find out about everything happening here at Voicer. Keep an eye out here for all of our upcoming events' />
+      <PhotographyTeam setOffsetTop={setOffsetTop} currentSectionId={currentSectionId} type='home' id={5} />
       <Footer type='home' links={links} />
     </div>
   )

@@ -7,10 +7,15 @@ import { Link } from 'react-router-dom'
 
 import './Header.css'
 
-const Header = ({ page, logo, links, to, booking }) => {
+const Header = ({ page, logo, links, to, booking, setCurrentSectionId }) => {
 
   const [open, setOpen] = useState(false);
-
+  const onCurrentSectionId = (id) => {
+    setCurrentSectionId(id);
+    setTimeout(() => {
+      setCurrentSectionId(null);
+    }, 1000)
+  }
 
   return (
     <header className={`${page}`}>
@@ -28,7 +33,7 @@ const Header = ({ page, logo, links, to, booking }) => {
             </li>)}
             {links && links.map(link => (
               <li className={`link ${page}`} key={link.id}>
-                <a href={`#${link.section}`}>{link.text}</a>
+                <button onClick={() => { onCurrentSectionId(link.id)}}>{link.text}</button>
               </li>))}
             {booking && <li className={`link ${page}`}>
               <Link to={booking.endpoint || '/contact-us'} href={`#social`}>{booking.text}</Link>

@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from '../UI/Button'
-import Image from '../images/hero.jpeg'
 
 import './MainHero.css'
 
@@ -15,7 +14,7 @@ const MainHero = () => {
             <Button to='/contact-us' page='home'>Let’s Partner</Button>
           </div>
           <div className="hero__image">
-            <img src={Image} alt="" />
+            <img src={'https://shubzstudios.herokuapp.com/static/hero.gif'} alt="" />
           </div>
         </div>
       </div>

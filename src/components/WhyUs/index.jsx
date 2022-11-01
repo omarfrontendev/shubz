@@ -1,10 +1,22 @@
 import React from 'react'
+import { useRef } from 'react'
+import { useEffect } from 'react'
 
 import './why_us.css'
 
-export default function WhyUs({ id }) {
+export default function WhyUs({ setOffsetTop, id, currentSectionId }) {
+  
+  const WhyUsSection = useRef(null);
+
+  useEffect(() => {
+    if(currentSectionId === id) {
+      setOffsetTop(WhyUsSection.current.offsetTop);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSectionId, id]);
+
   return (
-    <div className='why__us__section' id={id}>
+    <section ref={WhyUsSection} className='why__us__section'>
       <div className="container">
         <div className="why__us__content">
           <div>
@@ -27,6 +39,6 @@ export default function WhyUs({ id }) {
           </div> */}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
