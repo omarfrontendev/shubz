@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shubz/static/css/main.21456e07.css",
-    "main.js": "/shubz/static/js/main.cb709f8e.js",
+    "main.js": "/shubz/static/js/main.e9fa6c2c.js",
     "static/media/THE FISHER MAN MAKING_2.mkv": "/shubz/static/media/THE FISHER MAN MAKING_2.bfaca982405be93810ad.mkv",
     "static/media/Utibe Ima - Wyllz master HD.mkv": "/shubz/static/media/Utibe Ima - Wyllz master HD.832ff07216c545039d72.mkv",
     "static/media/Na So - Wyllz master HD.mkv": "/shubz/static/media/Na So - Wyllz master HD.c7f0a5d9df782da19b3e.mkv",
@@ -23,7 +23,6 @@
     "static/media/audwhite.png": "/shubz/static/media/audwhite.654ee0545e96edbd76bb.png",
     "static/media/tvwhite.png": "/shubz/static/media/tvwhite.26407df908a439101f75.png",
     "static/media/hp-service-bg-1.jpg": "/shubz/static/media/hp-service-bg-1.f47423763420611f15e5.jpg",
-    "static/media/hero.jpeg": "/shubz/static/media/hero.b6e7c8503d9aefc2e4ce.jpeg",
     "static/media/headerlogowhite.png": "/shubz/static/media/headerlogowhite.673ab58436c440895e7d.png",
     "static/media/hp-service-bg-2.jpg": "/shubz/static/media/hp-service-bg-2.457bfb0fbd0cc0c2f818.jpg",
     "static/media/3.jpg": "/shubz/static/media/3.59e293eedc952c2bf725.jpg",
@@ -35,10 +34,10 @@
     "static/media/slick.woff": "/shubz/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/shubz/index.html",
     "main.21456e07.css.map": "/shubz/static/css/main.21456e07.css.map",
-    "main.cb709f8e.js.map": "/shubz/static/js/main.cb709f8e.js.map"
+    "main.e9fa6c2c.js.map": "/shubz/static/js/main.e9fa6c2c.js.map"
   },
   "entrypoints": [
     "static/css/main.21456e07.css",
-    "static/js/main.cb709f8e.js"
+    "static/js/main.e9fa6c2c.js"
   ]
 }
