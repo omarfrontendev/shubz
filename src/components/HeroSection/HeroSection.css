@@ -29,3 +29,16 @@
   color: var(--color__dark__purple);
   color: #FFF;
 }
+.audio__player__box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  transform: translatex(-50%);
+  background-color: rgba(0, 0, 0, 0.596);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-size: 30px;
+}

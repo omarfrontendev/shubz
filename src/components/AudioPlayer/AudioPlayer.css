@@ -1,51 +1,52 @@
-.player__audio {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  /* height: 40px; */
-  background-color: rgba(0, 0, 0, 0.363);
+.audio__player__container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #FFF;
+  justify-content: flex-start;
+  column-gap: 10px;
 }
-.player__audio img {
-  display: none;
-}
-.player__audio > div {
-  max-width: 100vw !important;
-  width: 100% !important;
-}
-.player__audio wave {
-  height: 60px !important;
-}
-.player__audio > div div:nth-child(2) {
-  flex-direction: row-reverse !important;
-}
-.player__audio > div div:nth-child(2) > div {
-  margin-left: 0 !important;
-}
-.player__audio > div div:nth-child(2) > div:nth-child(1) {
+.audio__wave {
   flex: 1;
 }
-.player__audio > div div:nth-child(2) > div:nth-child(2) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 10px 0 20px;
-  column-gap: 20px;
+.audio__wave wave {
+  height: 60px !important;
 }
-.player__audio > div div:nth-child(2) > div span,
-.player__audio > div div:nth-child(2) > div svg {
-  margin: 0px !important;
+.play__icon {
+  transition: .3s;
+  font-size: 30px;
 }
-@media(max-width: 575px) {
-  .player__audio > div div:nth-child(2) > div:nth-child(2) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 10px;
-    column-gap: 12px;
-  }
+.play__icon:hover {
+  color: #DFA539;
+}
+/* .input__volume__range {
+  all: unset;
+  background-color: #DFA539;
+  border-radius: 50px;
+  height: 4px;
+} */
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 7px;
+  border-radius: 5px;
+  background-image: linear-gradient(#504F4D, #DFA539);
+  background-size: 10% 100%;
+  background-repeat: no-repeat;
+  transition: .3 linear;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #DFA539;
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
 }

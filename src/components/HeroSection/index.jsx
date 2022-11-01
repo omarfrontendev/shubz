@@ -2,11 +2,11 @@ import React from 'react'
 import Slider from "react-slick";
 import HeroContent from '../HeroContent';
 import TVCommercials from '../TVCommercials';
+import AudioPlayer from '../AudioPlayer';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './HeroSection.css'
-import AudioPlayer from '../AudioPlayer';
 
 const HeroSection = ({ data, page, to }) => {
 
@@ -50,7 +50,13 @@ const HeroSection = ({ data, page, to }) => {
             />
           ))}
         </Slider>
-        {page === 'audio' && <AudioPlayer />}
+        {page === 'audio' && (
+          <div className='audio__player__box'>
+            <div className="container">
+              <AudioPlayer audio='https://www.mfiles.co.uk/mp3-downloads/gs-cd-track2.mp3' />
+            </div>
+          </div>
+        )}
     </section>
   )
 }

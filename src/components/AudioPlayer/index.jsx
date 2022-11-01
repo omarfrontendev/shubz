@@ -1,27 +1,93 @@
-import React from 'react'
-import Player from "react-wavy-audio";
-
+import React, { useEffect, useRef, useState } from 'react'
+// import Player from "react-wavy-audio";
+import PropTypes from 'prop-types'
+import WaveSurfer from 'wavesurfer.js'
+import { BsPlayCircle, BsPauseCircle } from 'react-icons/bs'
+import { GoUnmute, GoMute } from 'react-icons/go'
 import './AudioPlayer.css'
 
-const AudioPlayer = () => {
+
+const AudioPlayer = ({ audio }) => {
+
+  const containerRef = useRef();
+  const waveSurferRef = useRef();
+  const [isPlaying, toggleIsPlaying] = useState(false);
+  const [isMuted, toggleIsMuted] = useState(false);
+  const [volume, setVolume] = useState('.5')
+
+  useEffect(() => {
+    const waveSurfer = WaveSurfer.create({
+      container: containerRef.current,
+      responsive: true,
+      cursorWidth: 0,
+      barHeight: .7,
+      progressColor: '#DFA539',
+      waveColor: '#888888',
+    });
+    waveSurfer.load(audio);
+    waveSurfer.on('ready', () => {
+      waveSurferRef.current = waveSurfer;
+      waveSurferRef.current.setVolume(volume);
+    });
+    
+    return () => {
+      waveSurfer.destroy();
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [audio]);
+
   return (
-    <div className='player__audio'>
-      <Player
-        imageUrl="https://pbs.twimg.com/media/A-lU5FnCcAA1Edi.jpg"
-        audioUrl="https://www.mfiles.co.uk/mp3-downloads/gs-cd-track2.mp3"
-        waveStyles={{
-          cursorWidth: 1,
-          progressColor: "#DFA539",
-          responsive: true,
-          waveColor: "#888888",
-          cursorColor: "transparent",
-          barWidth: 0
+    <div className='audio__player__container'>
+      <button
+        onClick={() => {
+          waveSurferRef.current.playPause();
+          toggleIsPlaying(waveSurferRef.current.isPlaying());
         }}
-        zoom={0}
-        className='wave__player'
+        type="button"
+        
+      >
+        {isPlaying ? <BsPauseCircle className='play__icon' /> : <BsPlayCircle className='play__icon' />}
+      </button>
+      <div ref={containerRef}  className='audio__wave' />
+      <button
+        onClick={() => {
+          waveSurferRef.current.toggleMute()
+          toggleIsMuted(prev => !prev)
+        }}
+        type="button"
+        
+      >
+        {!isMuted ? <GoUnmute className='play__icon' /> : <GoMute className='play__icon' />}
+      </button>
+      <input
+        type="range"
+        min="0"
+        step='.1'
+        max="1"
+        value={volume}
+        className='input__volume__range'
+        style={{
+          backgroundSize: `${volume * 100 + '%'} 100%`
+        }}
+        onChange={(e) => {
+          if(e.target.value === '0') {
+            toggleIsMuted(true);
+            setVolume(e.target.value);
+            waveSurferRef.current.setVolume(e.target.value);
+          }else {
+            toggleIsMuted(false);
+            setVolume(e.target.value);
+            waveSurferRef.current.setVolume(e.target.value);
+          }
+        }}
       />
+      {/* <input type="range" onChange={(e) => waveSurferRef.current.setVolume(e.target.value)} /> */}
     </div>
   )
+}
+
+AudioPlayer.propTypes = {
+  audio: PropTypes.string.isRequired,
 }
 
 export default AudioPlayer

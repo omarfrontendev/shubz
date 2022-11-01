@@ -12,13 +12,14 @@ const Header = ({ page, logo, links, to, booking, setCurrentSectionId }) => {
   const [open, setOpen] = useState(false);
   const onCurrentSectionId = (id) => {
     setCurrentSectionId(id);
+    setOpen(false);
     setTimeout(() => {
       setCurrentSectionId(null);
-    }, 1000)
+    }, 1000);
   }
 
   return (
-    <header className={`${page}`}>
+    <header className={`${page} ${!open ? 'backdrop' : ''}`}>
       <div className="container">
         <nav className={`main__header ${page}`}>
           <div className="logo">
@@ -33,7 +34,7 @@ const Header = ({ page, logo, links, to, booking, setCurrentSectionId }) => {
             </li>)}
             {links && links.map(link => (
               <li className={`link ${page}`} key={link.id}>
-                <button onClick={() => { onCurrentSectionId(link.id)}}>{link.text}</button>
+                <button onClick={() => {onCurrentSectionId(link.id)}}>{link.text}</button>
               </li>))}
             {booking && <li className={`link ${page}`}>
               <Link to={booking.endpoint || '/contact-us'} href={`#social`}>{booking.text}</Link>
@@ -47,7 +48,7 @@ const Header = ({ page, logo, links, to, booking, setCurrentSectionId }) => {
           </a>
         </nav>
       </div>
-    </header>
+   </header> 
   )
 }
 
