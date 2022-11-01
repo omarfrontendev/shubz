@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shubz/static/css/main.0c4eee35.css",
-    "main.js": "/shubz/static/js/main.da136111.js",
+    "main.js": "/shubz/static/js/main.2a07c62c.js",
     "static/media/THE FISHER MAN MAKING_2.mkv": "/shubz/static/media/THE FISHER MAN MAKING_2.bfaca982405be93810ad.mkv",
     "static/media/Utibe Ima - Wyllz master HD.mkv": "/shubz/static/media/Utibe Ima - Wyllz master HD.832ff07216c545039d72.mkv",
     "static/media/Na So - Wyllz master HD.mkv": "/shubz/static/media/Na So - Wyllz master HD.c7f0a5d9df782da19b3e.mkv",
@@ -34,10 +34,10 @@
     "static/media/slick.woff": "/shubz/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/shubz/index.html",
     "main.0c4eee35.css.map": "/shubz/static/css/main.0c4eee35.css.map",
-    "main.da136111.js.map": "/shubz/static/js/main.da136111.js.map"
+    "main.2a07c62c.js.map": "/shubz/static/js/main.2a07c62c.js.map"
   },
   "entrypoints": [
     "static/css/main.0c4eee35.css",
-    "static/js/main.da136111.js"
+    "static/js/main.2a07c62c.js"
   ]
 }
