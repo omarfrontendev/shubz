@@ -3,15 +3,25 @@ import Aos from "aos";
 
 import "aos/dist/aos.css";
 import './WeddingSection.css'
+import { useRef } from 'react';
 
-const WeddingSection = ({ id }) => {
+const WeddingSection = ({ id, currentSectionId, setOffsetTop }) => {
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
   }, []);
 
+  const section = useRef(null);
+
+  useEffect(() => {
+    if(currentSectionId === id) {
+      setOffsetTop(section.current.offsetTop);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSectionId, id]);
+
   return (
-    <section className='wedding__section' id={id}>
+    <section ref={section} className='wedding__section' id={id}>
       <div className="container" data-aos="fade-up">
         <h2 className="section__title tv">Are You <span>Engaged</span>? Delight Your <br/><span>Wedding</span></h2>
         <div className="weddings__media">

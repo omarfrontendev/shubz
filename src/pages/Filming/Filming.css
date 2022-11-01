@@ -16,12 +16,12 @@
 .filming__section {
   margin: 120px auto;
 }
-.filming__section.movies {
+.filming__section.dark {
   background-color: #111111;
   margin: 0;
   padding: 80px 0;
 }
-.filming__section.movies .section__title {
+.filming__section.dark .section__title {
   color: var(--color__white);
 }
 .filming__section .cards__container {
@@ -32,7 +32,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin-bottom: 40px;
 }
-.filming__section.movies .cards__container {
+.filming__section.dark .cards__container {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 .filming__section .main__button {
