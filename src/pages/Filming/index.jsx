@@ -40,30 +40,18 @@ const Filming = () => {
       id: 1,
       img: 'https://shubz.org/wp-content/themes/shubz-visuals/images/wedding-banner.jpg',
       name: 'Wedding Filming',
-      // rating: 4.8,
-      // date: 2018,
-      // duration: '1hr 21min',
-      // category: 'Weedings',
       desc: 'Are You Engaged? Delight Your Weddings With the best photography + cinematography for brides and grooms'
     },
     {
       id: 2,
       img: 'https://shubz.org/wp-content/themes/shubz-visuals/images/music-video-banner.png',
       name: 'Music Video',
-      // rating: 8.6,
-      // date: 2020,
-      // duration: '1hr 33min',
-      // category: 'ADS',
       desc: "HOW TO GET MORE AMAZING FANS WITH MUSIC VIDEO FOR MUSICIANS"
     },
     {
       id: 3,
       img: Banner2,
       name: 'Film Production',
-      // rating: 7.3,
-      // date: 2019,
-      // duration: '1hr 45min',
-      // category: 'War',
       desc: 'TOP MOST AFRICAN TALENT FILM PRODUCTION, Watch best of African Art, Films, and TV Shows'
     },
   ];

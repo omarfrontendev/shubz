@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import HeroContent from '../HeroContent';
 import TVCommercials from '../TVCommercials';
 import AudioPlayer from '../AudioPlayer';
+import Wave from '../audios/tracks/NEW.wav';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -53,7 +54,7 @@ const HeroSection = ({ data, page, to }) => {
         {page === 'audio' && (
           <div className='audio__player__box'>
             <div className="container">
-              <AudioPlayer audio='https://www.mfiles.co.uk/mp3-downloads/gs-cd-track2.mp3' />
+              <AudioPlayer audio={Wave} />
             </div>
           </div>
         )}

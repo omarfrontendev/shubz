@@ -10,9 +10,8 @@ const SingleProjectBox = ({ name, img, audio }) => {
       </div>
       <span className='project__name'>{name}</span>
       <audio controls>
-        <source src={'http://docs.google.com/uc?export=open&amp;id=1uZd99P8_xWM3fYsoSl4xHa8md2MWHa68'} type='audio/mp3' />
+        <source src={audio} type='audio/mp3' />
       </audio>
-      {/* <p className='project__signer'>{singer}</p> */}
     </div>
   )
 }
