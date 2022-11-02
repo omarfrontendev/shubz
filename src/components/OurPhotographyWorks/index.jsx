@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Aos from "aos";
 import { TbArrowsDiagonal } from 'react-icons/tb'
 import MainSlider from '../MainSlider';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import "aos/dist/aos.css";
 import './OurPhotographyWorks.css'
@@ -44,14 +43,7 @@ const OurPhotographyWorks = ({ id, title, images, subtitle, ph, currentSectionId
                 data-aos="fade-up"
                 data-aos-delay={w.delay}
               >
-                {/* <img src={w.img} alt="" /> */}
-                <LazyLoadImage
-                  alt={`${subtitle} image`}
-                  height={440}
-                  src={w.img} // use normal <img> attributes as props
-                  width={427}
-                  effect='blur'
-                />
+                <img src={w.img} alt={subtitle + "Image"} loading='lazy' />
                 <div>
                   <button onClick={() => {
                       setOpenSider(prev => !prev)
