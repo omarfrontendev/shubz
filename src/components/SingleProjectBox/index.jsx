@@ -9,7 +9,7 @@ const SingleProjectBox = ({ name, singer, img, audio }) => {
         <img className='project__img' src={img || ''} alt="" />
       </div>
       <span className='project__name'>{name}</span>
-      <audio src={audio}  controls/>
+      <audio src={audio} type='audio'  controls/>
       {/* <p className='project__signer'>{singer}</p> */}
     </div>
   )
