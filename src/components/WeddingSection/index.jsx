@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Weddings } from '../videos';
 import Aos from "aos";
 
 import "aos/dist/aos.css";
@@ -26,7 +27,7 @@ const WeddingSection = ({ id, currentSectionId, setOffsetTop }) => {
         <h2 className="section__title tv">Are You <span>Engaged</span>? Delight Your <br/><span>Wedding</span></h2>
         <div className="weddings__media">
           <div>
-            <video src='https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2FIMG_0256.MP4?alt=media&token=f0329485-dc7e-40fe-9a5a-4ae5526a8452' controls alt="" />
+            <video src={Weddings[0]} autoPlay muted controls alt="" />
           </div>
           <div className='weddings__text'>
             <h4>HOW TO GET AWESOME CINEMATIC WEDDING?</h4>
@@ -39,7 +40,7 @@ const WeddingSection = ({ id, currentSectionId, setOffsetTop }) => {
         </div>
         <div className="weddings__media">
           <div>
-            <video src='https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2FSweet%20bridal.mp4?alt=media&token=38a799c2-4847-4da1-bcf2-67ab2d5a97f7' controls alt="" />
+            <video src={Weddings[1]} autoPlay muted controls alt="" />
           </div>
           <div className='weddings__text'>
             <h4>6 Guaranteed Benefits You Get.</h4>
