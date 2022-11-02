@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Weddings } from '../videos';
 import Aos from "aos";
 
 import "aos/dist/aos.css";
 import './WeddingSection.css'
-import { useRef } from 'react';
 
 const WeddingSection = ({ id, currentSectionId, setOffsetTop }) => {
 

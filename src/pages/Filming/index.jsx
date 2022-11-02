@@ -13,6 +13,7 @@ import Music3 from '../../components/videos/peace final mhd.mkv'
 import MainVideo from '../../components/videos/THE FISHER MAN MAKING_2.mkv'
 import Pricing from '../../components/Pricing'
 import FilmingSection from '../../components/FilmingSection'
+import { Movies } from '../../components/videos'
 
 import "aos/dist/aos.css";
 import './Filming.css'
@@ -83,7 +84,7 @@ const Filming = () => {
   const allMovies = [
     {
       id: 2,
-      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2Fmain%20montage%20new.mp4?alt=media&token=2cafe922-df9e-4cdc-9037-bee1e953e218',
+      src: Movies[0],
       name: 'Montage',
       rating: 4.8,
       date: 2018,
@@ -92,7 +93,7 @@ const Filming = () => {
     },
     {
       id: 3,
-      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2FYou%20are%20watching%20cor%201.mp4?alt=media&token=b48b3fcd-02fb-44e9-955b-f9f93d80e77c',
+      src: Movies[1],
       name: 'UMO ENO TV',
       rating: 4.8,
       date: 2018,
@@ -101,7 +102,7 @@ const Filming = () => {
     },
     {
       id: 4,
-      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2Fbasumoh.mp4?alt=media&token=ced92180-7074-4759-b9c9-e0ddf21639c0',
+      src: Movies[2],
       name: 'Basumoh',
       rating: 4.8,
       date: 2018,
@@ -110,7 +111,7 @@ const Filming = () => {
     },
     {
       id: 5,
-      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2Fblow%20pos.mp4?alt=media&token=f0d8d890-a94b-4e65-b81c-f7a87f3eac3c',
+      src: Movies[3],
       name: 'Blow Pos',
       rating: 4.8,
       date: 2018,
@@ -119,7 +120,7 @@ const Filming = () => {
     },
     {
       id: 6,
-      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2FKetiano.mp4?alt=media&token=28c8de16-be49-4d60-b11c-c47f4ac1fd69',
+      src: Movies[4],
       name: 'Ketiano',
       rating: 4.8,
       date: 2018,
@@ -128,7 +129,7 @@ const Filming = () => {
     },
     {
       id: 7,
-      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2FLATONNE%20SIGNATURES.mp4?alt=media&token=aee320bb-a677-4722-9ea4-cb9e6986eb48',
+      src: Movies[5],
       name: 'LATONNE SIGNATURES',
       rating: 4.8,
       date: 2018,
@@ -137,7 +138,7 @@ const Filming = () => {
     },
     {
       id: 8,
-      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2FWestgate%20fhd.mp4?alt=media&token=9236340e-72c5-4e6f-8d3e-2d15b89a18b6',
+      src: Movies[6],
       name: 'Westgate fhd',
       rating: 4.8,
       date: 2018,
@@ -146,7 +147,7 @@ const Filming = () => {
     },
     {
       id: 9,
-      src: 'https://firebasestorage.googleapis.com/v0/b/shubz-d29c7.appspot.com/o/shubz-videos%2Fmade%20in%20aks.mp4?alt=media&token=4cedfc90-aea8-472b-a93b-af5ea0cda2eb',
+      src: Movies[7],
       name: 'made in aks',
       rating: 4.8,
       date: 2018,
