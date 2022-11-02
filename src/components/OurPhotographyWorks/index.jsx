@@ -43,7 +43,7 @@ const OurPhotographyWorks = ({ id, title, images, subtitle, ph, currentSectionId
                 data-aos="fade-up"
                 data-aos-delay={w.delay}
               >
-                <img src={w.img} alt={subtitle + "Image"} loading='lazy' />
+                <img src={w.img} alt={subtitle + " Image"} loading='lazy' />
                 <div>
                   <button onClick={() => {
                       setOpenSider(prev => !prev)
