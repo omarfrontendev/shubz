@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shubz/static/css/main.9616d501.css",
-    "main.js": "/shubz/static/js/main.923d7d81.js",
+    "main.css": "/shubz/static/css/main.ffb5a9a0.css",
+    "main.js": "/shubz/static/js/main.78fae340.js",
     "static/media/Westgate fhd.mp4": "/shubz/static/media/Westgate fhd.2761ba61f5512cda94a8.mp4",
     "static/media/Sweet bridal.mp4": "/shubz/static/media/Sweet bridal.09a066ecfd290a70ba0d.mp4",
     "static/media/THE FISHER MAN MAKING_2.mkv": "/shubz/static/media/THE FISHER MAN MAKING_2.bfaca982405be93810ad.mkv",
@@ -43,6 +43,7 @@
     "static/media/weddings.jpg": "/shubz/static/media/weddings.26b06797f57c4be36313.jpg",
     "static/media/portraits.jpg": "/shubz/static/media/portraits.e2a69b661b794f565394.jpg",
     "static/media/footer_bg.jpg": "/shubz/static/media/footer_bg.5d528a8616d507cbece8.jpg",
+    "static/media/music video.jpg": "/shubz/static/media/music video.41e56e03552e02b96b71.jpg",
     "static/media/bg_projects.jpg": "/shubz/static/media/bg_projects.44f99792088ac368f139.jpg",
     "static/media/shutterstock_204682738.jpg": "/shubz/static/media/shutterstock_204682738.8f2e4ac5ffd2aba41706.jpg",
     "static/media/photogwhite.png": "/shubz/static/media/photogwhite.53d27bf427ae2a546a2f.png",
@@ -59,11 +60,11 @@
     "static/media/slick.ttf": "/shubz/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/shubz/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/shubz/index.html",
-    "main.9616d501.css.map": "/shubz/static/css/main.9616d501.css.map",
-    "main.923d7d81.js.map": "/shubz/static/js/main.923d7d81.js.map"
+    "main.ffb5a9a0.css.map": "/shubz/static/css/main.ffb5a9a0.css.map",
+    "main.78fae340.js.map": "/shubz/static/js/main.78fae340.js.map"
   },
   "entrypoints": [
-    "static/css/main.9616d501.css",
-    "static/js/main.923d7d81.js"
+    "static/css/main.ffb5a9a0.css",
+    "static/js/main.78fae340.js"
   ]
 }
