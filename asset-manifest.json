@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shubz/static/css/main.7ee67b97.css",
-    "main.js": "/shubz/static/js/main.e593fce4.js",
+    "main.css": "/shubz/static/css/main.3a010afa.css",
+    "main.js": "/shubz/static/js/main.9613096a.js",
     "static/media/Westgate fhd.mp4": "/shubz/static/media/Westgate fhd.2761ba61f5512cda94a8.mp4",
     "static/media/Sweet bridal.mp4": "/shubz/static/media/Sweet bridal.09a066ecfd290a70ba0d.mp4",
     "static/media/THE FISHER MAN MAKING_2.mkv": "/shubz/static/media/THE FISHER MAN MAKING_2.bfaca982405be93810ad.mkv",
@@ -61,11 +61,11 @@
     "static/media/slick.ttf": "/shubz/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/shubz/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/shubz/index.html",
-    "main.7ee67b97.css.map": "/shubz/static/css/main.7ee67b97.css.map",
-    "main.e593fce4.js.map": "/shubz/static/js/main.e593fce4.js.map"
+    "main.3a010afa.css.map": "/shubz/static/css/main.3a010afa.css.map",
+    "main.9613096a.js.map": "/shubz/static/js/main.9613096a.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ee67b97.css",
-    "static/js/main.e593fce4.js"
+    "static/css/main.3a010afa.css",
+    "static/js/main.9613096a.js"
   ]
 }
